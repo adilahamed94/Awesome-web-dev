@@ -17,6 +17,7 @@
         </div>
       </div>
       <nav>
+        <a href="#start">Start Here</a>
         <a href="#roadmap">Roadmap</a>
         <a href="#theory">Theory</a>
         <a href="#fretboard">Fretboard</a>
@@ -59,6 +60,98 @@
           <div class="fret dot"></div><div class="fret"></div>
           <div class="fret double-dot"></div><div class="fret"></div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── START HERE ───────────────────────────────────────────────── -->
+  <section id="start">
+    <div class="section-header">
+      <h2>Start Here — Your First Session</h2>
+      <p>Everything you need to pick up the guitar and make real music today. No experience needed.</p>
+    </div>
+
+    <div class="start-grid">
+
+      <!-- LEFT COLUMN -->
+      <div class="start-left">
+
+        <div class="setup-card">
+          <h3>Before You Play</h3>
+          <p class="setup-sub">Check each one before every practice session.</p>
+          <div class="checklist" id="setup-checklist">
+            <label class="check-item"><input type="checkbox"><span>Tune your guitar — use a tuner app (GuitarTuna is free)</span></label>
+            <label class="check-item"><input type="checkbox"><span>Sit up, guitar body resting on your right leg (or left if left-handed)</span></label>
+            <label class="check-item"><input type="checkbox"><span>Left thumb behind the neck — not wrapped over the top</span></label>
+            <label class="check-item"><input type="checkbox"><span>Pick held loosely between thumb and index finger</span></label>
+            <label class="check-item"><input type="checkbox"><span>Use your fingertips to press strings, not the flat of the finger pad</span></label>
+            <label class="check-item"><input type="checkbox"><span>Press strings close to (but not ON) the fret wire — minimises buzzing</span></label>
+          </div>
+        </div>
+
+        <div class="chord-library-card">
+          <h3>Your First Chords</h3>
+          <p class="setup-sub">Learn in this order — each one builds on the last.</p>
+          <div class="chord-nav-btns" id="chord-nav"></div>
+          <div class="chord-display" id="chord-display"></div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="start-right">
+
+        <div class="metronome-card" id="metronome-card">
+          <h3>Metronome</h3>
+          <div class="metro-bpm-display" id="metro-bpm">80</div>
+          <div class="metro-bpm-label">BPM</div>
+          <input type="range" min="40" max="220" value="80" id="metro-slider" class="metro-slider" />
+          <div class="metro-range-labels"><span>40</span><span>220</span></div>
+          <div class="metro-beats-row" id="metro-beats"></div>
+          <div class="metro-controls">
+            <select id="metro-time" class="metro-select">
+              <option value="4">4 / 4</option>
+              <option value="3">3 / 4</option>
+              <option value="6">6 / 8</option>
+              <option value="5">5 / 4</option>
+              <option value="7">7 / 8</option>
+            </select>
+            <button id="metro-btn" class="metro-play-btn">&#9654; Start</button>
+          </div>
+          <div class="metro-tip">Start at 60–70 BPM. Only increase tempo when every note rings clean.</div>
+        </div>
+
+        <div class="exercise-card">
+          <h3>First Exercise: Em ↔ Am</h3>
+          <p class="setup-sub">The most important skill isn't the chord shape — it's switching between them smoothly.</p>
+          <div class="exercise-steps">
+            <div class="ex-step"><div class="ex-num">1</div><div class="ex-text">Form an <strong>Em</strong> chord. Strum all 6 strings 4 times, slowly.</div></div>
+            <div class="ex-step"><div class="ex-num">2</div><div class="ex-text">Lift your fingers. Form an <strong>Am</strong> chord. Strum 4 times.</div></div>
+            <div class="ex-step"><div class="ex-num">3</div><div class="ex-text">Keep switching. Every single string must ring — if one buzzes, stop and reposition.</div></div>
+            <div class="ex-step"><div class="ex-num">4</div><div class="ex-text">Only use the metronome once the shapes feel stable. Start at 60 BPM.</div></div>
+          </div>
+          <div class="strum-pattern">
+            <div class="sp-label">Beginner strum pattern:</div>
+            <div class="sp-arrows">
+              <div class="sp-beat"><span class="sp-d">↓</span><span class="sp-count-n">1</span></div>
+              <div class="sp-beat"><span class="sp-d">↓</span><span class="sp-count-n">2</span></div>
+              <div class="sp-beat"><span class="sp-u">↑</span><span class="sp-count-n">+</span></div>
+              <div class="sp-beat"><span class="sp-d">↓</span><span class="sp-count-n">3</span></div>
+              <div class="sp-beat"><span class="sp-u">↑</span><span class="sp-count-n">+</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="week1-card">
+          <h3>Week 1 Goals</h3>
+          <div class="week-goals">
+            <div class="wg"><span class="wg-day">Day 1–2</span><span class="wg-task">Learn Em and Am shapes. Switch 10 times cleanly.</span></div>
+            <div class="wg"><span class="wg-day">Day 3–4</span><span class="wg-task">Add E major. Practice Em → Am → E loop.</span></div>
+            <div class="wg"><span class="wg-day">Day 5–6</span><span class="wg-task">Add D major. String all 4 chords together.</span></div>
+            <div class="wg"><span class="wg-day">Day 7</span><span class="wg-task">Play "Knockin' on Heaven's Door" (G–D–Am or Em) start to finish.</span></div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
