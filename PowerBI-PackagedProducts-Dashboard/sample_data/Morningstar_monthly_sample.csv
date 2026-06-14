@@ -1,0 +1,201 @@
+CUSIP,SEC_SYM,MF_FAM_DESC,MF_NM,Fund_ID,Brand,Mstar_Cat,US_cat,Is_SMA_or_529,Allowable_List,Is_Master_List_Fund,Real_Share_Class,Broad_Category
+VBDIVUZZP,LHWTX,VANGUARD,VANGUARD Growth Fund A,FSCAP853QJ,Vanguard,US Fund Large Growth,US Fund Large Growth,N,Y,Y,N,Commodities
+4V30T9NT3,QWPSX,INVESCO,INVESCO Growth Fund C,FSCAP5YC33,Invesco,US Fund Small Growth,US Fund Small Growth,N,Y,N,Y,International Equity
+4FMYZYCWT,GMHYX,DWS FUNDS,DWS FUNDS Bond Fund A,FSCAPZUVDG,DWS,US Fund High Yield Bond,US Fund High Yield Bond,N,N,N,Y,Alternative
+JH75LXO6Q,GGOGX,MFS,MFS Blend Fund A,FSCAPUR81B,MFS,US Fund Small Blend,US Fund Small Blend,N,Y,N,Y,International Equity
+4FFYVNVQJ,OYRCX,LORD ABBETT,LORD ABBETT Blend Fund INST,FSINVDZ4HR,Lord Abbett,US Fund Foreign Large Blend,US Fund Foreign Large Blend,N,Y,Y,Y,International Equity
+JSG65KXVF,TOUNX,FIRST EAGLE,FIRST EAGLE Blend Fund INST,FSCAP4FGYV,First Eagle,US Fund Small Blend,US Fund Small Blend,N,Y,N,Y,Alternative
+IUC039TEX,YENPX,DWS FUNDS,DWS FUNDS Bond Fund A,FSUSA4DZT8,DWS,US Fund Multisector Bond,US Fund Multisector Bond,N,Y,Y,N,Allocation
+CATVAZCCB,INHMX,CAPITAL GROUP,CAPITAL GROUP Blend Fund INST,FSC7363842,capital group,US Fund Small Blend,US Fund Small Blend,N,Y,Y,N,Commodities
+MO5BXXC02,CENDX,FRANKLIN TEMPLETON,FRANKLIN TEMPLETON Value Fund INST,FSINV8HE3N,Franklin Templeton,US Fund Large Value,US Fund Large Value,N,Y,Y,N,Fixed Income
+4874FRHOC,JZGUX,INVESCO,INVESCO Bond Fund C,FSUSAFVJ1Z,Invesco,US Fund Short-Term Bond,US Fund Short-Term Bond,N,Y,N,Y,Fixed Income
+0CVS4F8CG,PRGDX,T ROWE PRICE,T ROWE PRICE Bond Fund C,FSINV5AYKJ,T. Rowe Price,US Fund Short-Term Bond,US Fund Short-Term Bond,Y,N,Y,Y,Allocation
+HZIOYKL1C,LZZBX,FIRST EAGLE,FIRST EAGLE Bond Fund A,FSUSAMFLIX,First Eagle,US Fund Multisector Bond,US Fund Multisector Bond,N,Y,Y,Y,Sector Equity
+ZW9XA3KX7,DDCOX,CAPITAL GROUP,CAPITAL GROUP Blend Fund A,FSCAPVVD5U,capital group,US Fund Small Blend,US Fund Small Blend,N,Y,Y,Y,Sector Equity
+4DPJA1WJ0,OLABX,PIMCO,PIMCO Bond Fund S,FSCAP7M9HW,PIMCO,US Fund Short-Term Bond,US Fund Short-Term Bond,N,Y,N,Y,Allocation
+6246HID25,KQEYX,FIRST EAGLE,FIRST EAGLE Growth Fund INST,FSUSAUK54B,First Eagle,US Fund Small Growth,US Fund Small Growth,N,Y,Y,Y,International Equity
+3J2D54I3Q,HUFAX,NUVEEN,NUVEEN Value Fund INV,FSC8073988,Nuveen,US Fund Large Value,US Fund Large Value,N,Y,N,N,Fixed Income
+T7E8G8JDP,SIPNX,CAPITAL GROUP,CAPITAL GROUP Blend Fund A,FSUSAYANEZ,capital group,US Fund Foreign Large Blend,US Fund Foreign Large Blend,N,Y,Y,N,Commodities
+0YNCXLL4Z,HIKKX,FIDELITY,FIDELITY Bond Fund A,FSUSAP0XJP,Fidelity,US Fund Multisector Bond,US Fund Multisector Bond,N,Y,Y,Y,Sector Equity
+O4KH2VLPY,NUYTX,PIMCO,PIMCO Blend Fund A,FSINVNDQ6K,PIMCO,US Fund Small Blend,US Fund Small Blend,N,Y,Y,Y,Alternative
+FB9W1Q5UZ,JKDRX,VANGUARD,VANGUARD Growth Fund A,FSCAP3Y8BT,Vanguard,US Fund Large Growth,US Fund Large Growth,N,Y,Y,Y,Allocation
+U7EEQTUL1,LVXLX,FIRST EAGLE,FIRST EAGLE Estate Fund INST,FSUSAS7SPG,First Eagle,US Fund Real Estate,US Fund Real Estate,Y,Y,N,Y,Fixed Income
+WJCKJLTEI,SSBKX,FIRST EAGLE,FIRST EAGLE Blend Fund C,FSC7422675,First Eagle,US Fund Small Blend,US Fund Small Blend,N,N,N,Y,Alternative
+R7KO64T02,XMHMX,FRANKLIN TEMPLETON,FRANKLIN TEMPLETON Blend Fund C,FSC8379085,Franklin Templeton,US Fund Mid-Cap Blend,US Fund Mid-Cap Blend,Y,Y,Y,Y,Allocation
+6VXDP5GJL,LIWHX,FIDELITY,FIDELITY Bond Fund INST,FSINVQUXZJ,Fidelity,US Fund Intermediate Core Bond,US Fund Intermediate Core Bond,N,Y,N,Y,Allocation
+C8BBI4WIR,CYMGX,NUVEEN,NUVEEN Blend Fund A,FSUSAGQ1Y8,Nuveen,US Fund Foreign Large Blend,US Fund Foreign Large Blend,N,Y,Y,Y,International Equity
+U6N7HV3IZ,HRUUX,JPMORGAN,JPMORGAN Value Fund S,FSUSAS5BKX,JPMorgan,US Fund Large Value,US Fund Large Value,N,Y,Y,Y,Commodities
+RPN6QFGSX,QXUMX,LORD ABBETT,LORD ABBETT Estate Fund A,FSINVN2N0F,Lord Abbett,US Fund Real Estate,US Fund Real Estate,N,Y,Y,N,Fixed Income
+QVNB4GH2M,WSHAX,NUVEEN,NUVEEN Growth Fund S,FSCAPUT3V8,Nuveen,US Fund Small Growth,US Fund Small Growth,N,Y,N,Y,Commodities
+2DHYLURTP,TISHX,CAPITAL GROUP,CAPITAL GROUP Growth Fund A,FSINVHRONH,capital group,US Fund Large Growth,US Fund Large Growth,N,Y,N,Y,Allocation
+V1V93KMKZ,DBBHX,PIMCO,PIMCO Allocation Fund A,FSC3796172,PIMCO,US Fund Moderate Allocation,US Fund Moderate Allocation,Y,N,N,Y,Allocation
+8J5ECRUYF,VYCGX,INVESCO,INVESCO Bond Fund INST,FSINV30AHC,Invesco,US Fund High Yield Bond,US Fund High Yield Bond,Y,Y,N,N,Fixed Income
+C8D1WJCIT,EKRMX,FRANKLIN TEMPLETON,FRANKLIN TEMPLETON Estate Fund C,FSC7392545,Franklin Templeton,US Fund Real Estate,US Fund Real Estate,N,Y,N,Y,US Equity
+WX7PTX63C,EHTOX,DWS FUNDS,DWS FUNDS Allocation Fund A,FSCAPPGOXS,DWS,US Fund Moderate Allocation,US Fund Moderate Allocation,N,Y,N,Y,Sector Equity
+BPLJD84U8,ZRHBX,PIMCO,PIMCO Blend Fund A,FSCAPPXIH2,PIMCO,US Fund Mid-Cap Blend,US Fund Mid-Cap Blend,N,Y,N,Y,Sector Equity
+DMLY4LYK8,VOLIX,BLACKROCK,BLACKROCK Value Fund C,FSINVW6LMH,BlackRock,US Fund Large Value,US Fund Large Value,N,Y,Y,Y,Allocation
+BSWRPBJEK,WMAQX,JPMORGAN,JPMORGAN Growth Fund INV,FSINVVT0VG,JPMorgan,US Fund Large Growth,US Fund Large Growth,N,Y,Y,Y,Allocation
+QE3RZSJ49,GOJXX,BLACKROCK,BLACKROCK Allocation Fund INST,FSCAPJJ3ZW,BlackRock,US Fund Moderate Allocation,US Fund Moderate Allocation,N,Y,Y,N,Sector Equity
+3KKV9RFTM,OOLIX,FRANKLIN TEMPLETON,FRANKLIN TEMPLETON Growth Fund INST,FSUSA9SEXI,Franklin Templeton,US Fund Small Growth,US Fund Small Growth,N,Y,Y,Y,Fixed Income
+3NX39RBSV,WWLNX,CAPITAL GROUP,CAPITAL GROUP Growth Fund A,FSINV8R1QP,capital group,US Fund Small Growth,US Fund Small Growth,N,Y,Y,Y,US Equity
+WOCLYT8W5,MOQGX,T ROWE PRICE,T ROWE PRICE Blend Fund INST,FSINVVY2S9,T. Rowe Price,US Fund Large Blend,US Fund Large Blend,N,Y,Y,Y,Allocation
+Y6B2KNFTU,UECWX,VANGUARD,VANGUARD Bond Fund INV,FSUSAF3MVF,Vanguard,US Fund Short-Term Bond,US Fund Short-Term Bond,Y,Y,Y,Y,International Equity
+TC89K8YQK,ZWCJX,LORD ABBETT,LORD ABBETT Bond Fund A,FSC2646842,Lord Abbett,US Fund High Yield Bond,US Fund High Yield Bond,N,Y,Y,N,Sector Equity
+2960361I2,FEGTX,JPMORGAN,JPMORGAN Bond Fund A,FSCAP0TE0V,JPMorgan,US Fund Multisector Bond,US Fund Multisector Bond,N,Y,N,Y,US Equity
+DK0GET8T6,VGVMX,BLACKROCK,BLACKROCK Bond Fund INST,FSC6963457,BlackRock,US Fund High Yield Bond,US Fund High Yield Bond,N,N,Y,Y,US Equity
+YYO4UDOJE,JTGJX,BLACKROCK,BLACKROCK Bond Fund INST,FSCAPSG2R8,BlackRock,US Fund Short-Term Bond,US Fund Short-Term Bond,N,Y,Y,Y,Commodities
+QZXEBB9EI,NKJYX,VANGUARD,VANGUARD Bond Fund A,FSC4693666,Vanguard,US Fund Intermediate Core Bond,US Fund Intermediate Core Bond,N,N,Y,Y,Sector Equity
+HQIN9N6XC,HZYVX,MFS,MFS Blend Fund C,FSC8686926,MFS,US Fund Small Blend,US Fund Small Blend,Y,Y,Y,N,Commodities
+3TV3I12VJ,ZZOUX,AMERICAN FUNDS,AMERICAN FUNDS Bond Fund A,FSUSA1CZS7,capital group,US Fund High Yield Bond,US Fund High Yield Bond,N,Y,Y,Y,Allocation
+S0R2SDS8B,UWNLX,AMERICAN FUNDS,AMERICAN FUNDS Bond Fund INST,FSC0723107,capital group,US Fund High Yield Bond,US Fund High Yield Bond,N,Y,Y,Y,Alternative
+LFEWVZNVK,NLUCX,DWS FUNDS,DWS FUNDS Blend Fund INV,FSINVF3PFW,DWS,US Fund Large Blend,US Fund Large Blend,N,Y,N,Y,Alternative
+LJ8YRDDP0,JDBYX,VANGUARD,VANGUARD Bond Fund INST,FSC4848373,Vanguard,US Fund High Yield Bond,US Fund High Yield Bond,N,N,Y,Y,US Equity
+8VMUHXID4,JTOUX,FRANKLIN TEMPLETON,FRANKLIN TEMPLETON Bond Fund INST,FSINVCNRVP,Franklin Templeton,US Fund Intermediate Core Bond,US Fund Intermediate Core Bond,N,Y,N,Y,Fixed Income
+17MGFXC08,CNJLX,NUVEEN,NUVEEN Blend Fund INV,FSUSALNO19,Nuveen,US Fund Small Blend,US Fund Small Blend,N,Y,N,Y,US Equity
+WYJXRPJ1E,LHRMX,INVESCO,INVESCO Bond Fund A,FSCAPRK315,Invesco,US Fund Intermediate Core Bond,US Fund Intermediate Core Bond,N,N,Y,Y,Fixed Income
+1KERPETIU,RJKTX,VANGUARD,VANGUARD Bond Fund A,FSINVZ17YR,Vanguard,US Fund Short-Term Bond,US Fund Short-Term Bond,N,Y,Y,Y,Fixed Income
+EAL2W37D4,GPNKX,FIDELITY,FIDELITY Blend Fund C,FSUSAVKKPF,Fidelity,US Fund Large Blend,US Fund Large Blend,N,N,Y,Y,International Equity
+1M8XFDJGF,TBYQX,PIMCO,PIMCO Growth Fund A,FSCAPS2MJ6,PIMCO,US Fund Small Growth,US Fund Small Growth,N,N,N,Y,Allocation
+8LPQW2VMC,MAJHX,T ROWE PRICE,T ROWE PRICE Estate Fund S,FSINVOVNZB,T. Rowe Price,US Fund Real Estate,US Fund Real Estate,N,Y,Y,N,Commodities
+6Q3XLRFCD,XISNX,VANGUARD,VANGUARD Allocation Fund INV,FSUSAMIGJS,Vanguard,US Fund Tactical Allocation,US Fund Tactical Allocation,N,Y,Y,N,US Equity
+N1YBWMLUN,GWZPX,INVESCO,INVESCO Blend Fund A,FSINVZILDX,Invesco,US Fund Large Blend,US Fund Large Blend,N,Y,N,Y,US Equity
+UXLEZ896D,RNAIX,INVESCO,INVESCO Bond Fund A,FSC9366170,Invesco,US Fund Intermediate Core Bond,US Fund Intermediate Core Bond,N,N,Y,Y,Commodities
+ST0SX5WVF,ESQXX,CAPITAL GROUP,CAPITAL GROUP Bond Fund INST,FSINV6Z5AS,capital group,US Fund Intermediate Core Bond,US Fund Intermediate Core Bond,N,Y,Y,Y,US Equity
+QTL3Q4N89,MHJNX,MFS,MFS Blend Fund A,FSCAPO8FAQ,MFS,US Fund Mid-Cap Blend,US Fund Mid-Cap Blend,N,N,Y,Y,Sector Equity
+EDFQS3D63,XYKKX,INVESCO,INVESCO Allocation Fund A,FSC8043975,Invesco,US Fund Tactical Allocation,US Fund Tactical Allocation,N,Y,Y,Y,Sector Equity
+2EK3ZEZQA,CGVOX,JPMORGAN,JPMORGAN Allocation Fund A,FSUSAD1XUN,JPMorgan,US Fund Moderate Allocation,US Fund Moderate Allocation,N,Y,Y,Y,Alternative
+WC4RTWUZK,AJOEX,MFS,MFS Bond Fund C,FSUSAR848N,MFS,US Fund Multisector Bond,US Fund Multisector Bond,N,Y,Y,Y,Sector Equity
+OQW9JA2M0,QUTIX,VANGUARD,VANGUARD Growth Fund C,FSCAP2IIZJ,Vanguard,US Fund Large Growth,US Fund Large Growth,N,Y,Y,Y,Commodities
+7BH25LLO3,MAQHX,DWS FUNDS,DWS FUNDS Bond Fund C,FSC8694117,DWS,US Fund Intermediate Core Bond,US Fund Intermediate Core Bond,N,Y,N,N,Allocation
+8MGYN2JCP,LZEHX,NUVEEN,NUVEEN Estate Fund A,FSCAP9SFEF,Nuveen,US Fund Real Estate,US Fund Real Estate,N,Y,Y,N,Alternative
+B5M9J98CW,JURYX,AMERICAN FUNDS,AMERICAN FUNDS Growth Fund A,FSCAPBLFOC,capital group,US Fund Large Growth,US Fund Large Growth,N,N,Y,Y,Commodities
+UVY8N1UTO,QGCTX,INVESCO,INVESCO Allocation Fund S,FSINV12SDD,Invesco,US Fund Tactical Allocation,US Fund Tactical Allocation,N,Y,Y,Y,Allocation
+6RE4Q6QDY,VIJBX,T ROWE PRICE,T ROWE PRICE Blend Fund A,FSUSA99GZA,T. Rowe Price,US Fund Small Blend,US Fund Small Blend,Y,N,Y,Y,International Equity
+E2ATN2TWD,IZSNX,FRANKLIN TEMPLETON,FRANKLIN TEMPLETON Bond Fund INST,FSC7967512,Franklin Templeton,US Fund Short-Term Bond,US Fund Short-Term Bond,Y,Y,N,Y,Allocation
+E3TV1ES53,NHEYX,BLACKROCK,BLACKROCK Blend Fund INST,FSUSA4B2GI,BlackRock,US Fund Foreign Large Blend,US Fund Foreign Large Blend,N,N,N,Y,Allocation
+KTSG7FXZV,VOVAX,CAPITAL GROUP,CAPITAL GROUP Bond Fund INST,FSCAPU9MJ4,capital group,US Fund Intermediate Core Bond,US Fund Intermediate Core Bond,N,Y,Y,Y,US Equity
+WK8R2YKCC,LMFPX,DWS FUNDS,DWS FUNDS Bond Fund INST,FSCAPNRENH,DWS,US Fund High Yield Bond,US Fund High Yield Bond,N,Y,Y,Y,Alternative
+QJIDKNWI5,EIPIX,JPMORGAN,JPMORGAN Allocation Fund INST,FSCAPZ4DKB,JPMorgan,US Fund Tactical Allocation,US Fund Tactical Allocation,N,Y,N,Y,Fixed Income
+8HMBR5XQT,WLWSX,BLACKROCK,BLACKROCK Value Fund C,FSINVHB0YI,BlackRock,US Fund Large Value,US Fund Large Value,Y,N,N,Y,Allocation
+QT3WVEDN9,OJDPX,BLACKROCK,BLACKROCK Blend Fund A,FSINV1KDAD,BlackRock,US Fund Foreign Large Blend,US Fund Foreign Large Blend,Y,Y,N,Y,Allocation
+SLWF90KM3,NSHVX,FIDELITY,FIDELITY Blend Fund A,FSUSA4BHGL,Fidelity,US Fund Small Blend,US Fund Small Blend,N,N,Y,Y,Fixed Income
+92N9BO0AK,EFWLX,FIDELITY,FIDELITY Allocation Fund A,FSCAP3N1PT,Fidelity,US Fund Moderate Allocation,US Fund Moderate Allocation,N,Y,Y,Y,Allocation
+5WW4YYMOE,NYNSX,PIMCO,PIMCO Growth Fund INST,FSUSAD3C5P,PIMCO,US Fund Large Growth,US Fund Large Growth,N,N,N,N,Fixed Income
+L8DJ0EK3L,JHKFX,NUVEEN,NUVEEN Blend Fund S,FSUSAEQV3Y,Nuveen,US Fund Small Blend,US Fund Small Blend,N,N,Y,Y,Allocation
+U7YOL6LBM,TAGXX,FIRST EAGLE,FIRST EAGLE Bond Fund INST,FSINV2QWV9,First Eagle,US Fund High Yield Bond,US Fund High Yield Bond,N,Y,Y,Y,Fixed Income
+5EYQT4XS3,CEYZX,VANGUARD,VANGUARD Estate Fund A,FSINVEWGD7,Vanguard,US Fund Real Estate,US Fund Real Estate,N,Y,Y,Y,International Equity
+76KEOC6P3,DHDWX,T ROWE PRICE,T ROWE PRICE Bond Fund A,FSINV91KNU,T. Rowe Price,US Fund Multisector Bond,US Fund Multisector Bond,Y,N,N,Y,Fixed Income
+5X7F6TE8C,LZHTX,CAPITAL GROUP,CAPITAL GROUP Bond Fund INST,FSC3690184,capital group,US Fund Short-Term Bond,US Fund Short-Term Bond,N,Y,Y,Y,Allocation
+DZWI7PLC1,HGEYX,BLACKROCK,BLACKROCK Growth Fund C,FSCAPE8TXT,BlackRock,US Fund Large Growth,US Fund Large Growth,N,N,N,Y,Commodities
+KD5R9X7XK,LXGCX,AMERICAN FUNDS,AMERICAN FUNDS Blend Fund INST,FSCAPKBFSN,capital group,US Fund Foreign Large Blend,US Fund Foreign Large Blend,N,Y,Y,Y,Sector Equity
+0BU1IADYW,ZQMVX,VANGUARD,VANGUARD Blend Fund INST,FSUSANJKOB,Vanguard,US Fund Large Blend,US Fund Large Blend,N,Y,Y,Y,Fixed Income
+DP1F84C3Z,UIGAX,CAPITAL GROUP,CAPITAL GROUP Allocation Fund A,FSC3666274,capital group,US Fund Moderate Allocation,US Fund Moderate Allocation,N,Y,Y,Y,Sector Equity
+QX0MUL27B,JXDBX,LORD ABBETT,LORD ABBETT Allocation Fund C,FSUSAW4BEK,Lord Abbett,US Fund Moderate Allocation,US Fund Moderate Allocation,N,N,Y,Y,International Equity
+WGC7DV5BY,SXVUX,PIMCO,PIMCO Blend Fund INST,FSINVE1YQL,PIMCO,US Fund Mid-Cap Blend,US Fund Mid-Cap Blend,N,Y,N,Y,US Equity
+2DE83QUV5,DVEGX,INVESCO,INVESCO Growth Fund C,FSUSAIJQNE,Invesco,US Fund Small Growth,US Fund Small Growth,Y,Y,Y,Y,Allocation
+476EGQE8D,HEQMX,AMERICAN FUNDS,AMERICAN FUNDS Value Fund A,FSINVHCTP7,capital group,US Fund Large Value,US Fund Large Value,N,Y,N,Y,International Equity
+60AJBV6JN,NBSHX,INVESCO,INVESCO Allocation Fund A,FSINV8H9W3,Invesco,US Fund Moderate Allocation,US Fund Moderate Allocation,N,Y,Y,N,Commodities
+5X65UM4YR,PZPKX,JPMORGAN,JPMORGAN Blend Fund INV,FSCAPZ4YS8,JPMorgan,US Fund Large Blend,US Fund Large Blend,Y,Y,N,N,Fixed Income
+6EFIDXWIH,CMEYX,VANGUARD,VANGUARD Estate Fund A,FSC4315646,Vanguard,US Fund Real Estate,US Fund Real Estate,N,Y,N,Y,Fixed Income
+Z5GF0G46U,UNISX,VANGUARD,VANGUARD Blend Fund A,FSCAPEKYTT,Vanguard,US Fund Large Blend,US Fund Large Blend,N,Y,Y,Y,Alternative
+9UPSRGI9P,YODQX,BLACKROCK,BLACKROCK Blend Fund A,FSCAP7T3HZ,BlackRock,US Fund Mid-Cap Blend,US Fund Mid-Cap Blend,N,Y,Y,Y,International Equity
+VU1IAPKX5,UOCUX,FRANKLIN TEMPLETON,FRANKLIN TEMPLETON Blend Fund S,FSC4360452,Franklin Templeton,US Fund Large Blend,US Fund Large Blend,Y,Y,Y,Y,Alternative
+R9A67L7S4,XOCDX,T ROWE PRICE,T ROWE PRICE Blend Fund INST,FSCAPEBDBF,T. Rowe Price,US Fund Large Blend,US Fund Large Blend,N,Y,N,Y,US Equity
+KR918S0HC,JUCWX,FRANKLIN TEMPLETON,FRANKLIN TEMPLETON Blend Fund INST,FSC5753819,Franklin Templeton,US Fund Large Blend,US Fund Large Blend,N,N,Y,N,US Equity
+XXO1ID2CP,CCZIX,BLACKROCK,BLACKROCK Allocation Fund A,FSUSAG0EOH,BlackRock,US Fund Moderate Allocation,US Fund Moderate Allocation,N,Y,N,Y,Allocation
+9A8RWHO3U,WXHXX,MFS,MFS Allocation Fund A,FSC4782046,MFS,US Fund Moderate Allocation,US Fund Moderate Allocation,N,Y,Y,Y,Allocation
+JRF57CPLE,RASFX,FRANKLIN TEMPLETON,FRANKLIN TEMPLETON Value Fund A,FSC8384614,Franklin Templeton,US Fund Large Value,US Fund Large Value,N,Y,N,N,Sector Equity
+BMTXV4L9L,XNOTX,BLACKROCK,BLACKROCK Blend Fund S,FSUSA4TZWQ,BlackRock,US Fund Mid-Cap Blend,US Fund Mid-Cap Blend,N,N,N,Y,Fixed Income
+ZTC0J9BLB,YJCXX,BLACKROCK,BLACKROCK Allocation Fund C,FSCAP9FYGZ,BlackRock,US Fund Tactical Allocation,US Fund Tactical Allocation,N,N,N,Y,Commodities
+0X2VVI7AI,GQHAX,JPMORGAN,JPMORGAN Growth Fund INST,FSINVHZ0S1,JPMorgan,US Fund Small Growth,US Fund Small Growth,N,N,Y,Y,US Equity
+8MSABBKAZ,GJQKX,MFS,MFS Bond Fund C,FSINVM029S,MFS,US Fund High Yield Bond,US Fund High Yield Bond,N,N,Y,Y,US Equity
+V4OEPC8TZ,PTCNX,BLACKROCK,BLACKROCK Allocation Fund A,FSINVCD0ZJ,BlackRock,US Fund Moderate Allocation,US Fund Moderate Allocation,N,Y,N,Y,Allocation
+UVLD7P441,GQRMX,INVESCO,INVESCO Bond Fund INST,FSINVCODK4,Invesco,US Fund High Yield Bond,US Fund High Yield Bond,N,Y,Y,Y,Sector Equity
+8I3ZEQQFL,JKGHX,BLACKROCK,BLACKROCK Blend Fund INST,FSINVVTT31,BlackRock,US Fund Mid-Cap Blend,US Fund Mid-Cap Blend,N,N,Y,Y,Alternative
+L7TG6CD2I,LDYRX,FIDELITY,FIDELITY Bond Fund C,FSCAPRNLR9,Fidelity,US Fund Multisector Bond,US Fund Multisector Bond,N,N,Y,Y,Fixed Income
+KT79AAXN4,WGKWX,PIMCO,PIMCO Estate Fund C,FSC7479089,PIMCO,US Fund Real Estate,US Fund Real Estate,N,Y,Y,Y,US Equity
+RIOW2PJU7,LBGWX,BLACKROCK,BLACKROCK Bond Fund A,FSCAPKUIKN,BlackRock,US Fund Multisector Bond,US Fund Multisector Bond,Y,Y,N,N,Sector Equity
+3PYOCVVV6,EVDOX,JPMORGAN,JPMORGAN Growth Fund S,FSINV44JGF,JPMorgan,US Fund Large Growth,US Fund Large Growth,N,Y,Y,Y,Fixed Income
+M1QUANX0H,XPRZX,VANGUARD,VANGUARD Bond Fund A,FSINVFKUUJ,Vanguard,US Fund Multisector Bond,US Fund Multisector Bond,N,Y,Y,Y,Allocation
+B24Q7EN8A,CJHQX,T ROWE PRICE,T ROWE PRICE Blend Fund INST,FSCAPSHHT3,T. Rowe Price,US Fund Large Blend,US Fund Large Blend,N,Y,N,Y,Alternative
+J67TM0ZXO,VTKGX,DWS FUNDS,DWS FUNDS Bond Fund INST,FSCAPGBDZ7,DWS,US Fund High Yield Bond,US Fund High Yield Bond,N,Y,Y,Y,Fixed Income
+YF7QTZ1RU,RWMYX,JPMORGAN,JPMORGAN Growth Fund A,FSC0939897,JPMorgan,US Fund Small Growth,US Fund Small Growth,N,Y,Y,Y,International Equity
+T2GQYLTX1,ZUHRX,FRANKLIN TEMPLETON,FRANKLIN TEMPLETON Bond Fund INV,FSC7644298,Franklin Templeton,US Fund Multisector Bond,US Fund Multisector Bond,N,Y,Y,Y,Allocation
+YJKD9UCEG,RPAVX,DWS FUNDS,DWS FUNDS Blend Fund INV,FSINVSF8HS,DWS,US Fund Large Blend,US Fund Large Blend,Y,Y,Y,Y,International Equity
+SHRBSH103,PDYMX,T ROWE PRICE,T ROWE PRICE Estate Fund A,FSC3063654,T. Rowe Price,US Fund Real Estate,US Fund Real Estate,N,Y,Y,Y,Allocation
+TDNUMVEXG,WKGGX,CAPITAL GROUP,CAPITAL GROUP Value Fund INST,FSINVKPRAA,capital group,US Fund Large Value,US Fund Large Value,N,Y,Y,Y,Fixed Income
+DCF33U699,PKLLX,AMERICAN FUNDS,AMERICAN FUNDS Blend Fund A,FSINVZW9WL,capital group,US Fund Small Blend,US Fund Small Blend,N,Y,Y,Y,Allocation
+Y5KFSNRRL,OUBGX,LORD ABBETT,LORD ABBETT Bond Fund A,FSCAPTK7HV,Lord Abbett,US Fund Short-Term Bond,US Fund Short-Term Bond,N,N,Y,Y,Alternative
+3OM8LHPWF,WRHUX,NUVEEN,NUVEEN Growth Fund A,FSINVH4SZK,Nuveen,US Fund Small Growth,US Fund Small Growth,N,Y,Y,Y,International Equity
+XUJV248PS,MMNXX,FRANKLIN TEMPLETON,FRANKLIN TEMPLETON Allocation Fund INST,FSC3547525,Franklin Templeton,US Fund Moderate Allocation,US Fund Moderate Allocation,N,N,N,Y,US Equity
+8NG0DLHXB,AACXX,AMERICAN FUNDS,AMERICAN FUNDS Blend Fund A,FSINVDVSLV,capital group,US Fund Large Blend,US Fund Large Blend,Y,N,N,N,International Equity
+C7PP7KO2L,CFFBX,T ROWE PRICE,T ROWE PRICE Estate Fund A,FSUSA4RAS8,T. Rowe Price,US Fund Real Estate,US Fund Real Estate,N,Y,N,Y,US Equity
+3RY0Z9YJG,XLKAX,AMERICAN FUNDS,AMERICAN FUNDS Blend Fund INST,FSCAPIDF8V,capital group,US Fund Large Blend,US Fund Large Blend,N,Y,N,Y,Allocation
+H4RWB45D5,HEEVX,T ROWE PRICE,T ROWE PRICE Allocation Fund A,FSUSAPPZZ7,T. Rowe Price,US Fund Moderate Allocation,US Fund Moderate Allocation,N,Y,N,Y,Fixed Income
+JYPOGX49J,ISVVX,FRANKLIN TEMPLETON,FRANKLIN TEMPLETON Bond Fund INST,FSC9629423,Franklin Templeton,US Fund Multisector Bond,US Fund Multisector Bond,N,N,Y,Y,US Equity
+07ZUL867W,BZMPX,AMERICAN FUNDS,AMERICAN FUNDS Growth Fund INST,FSUSAZ1A1W,capital group,US Fund Large Growth,US Fund Large Growth,N,N,Y,Y,Sector Equity
+BL64LFQAJ,EKGBX,CAPITAL GROUP,CAPITAL GROUP Estate Fund INST,FSCAPSZHHF,capital group,US Fund Real Estate,US Fund Real Estate,N,N,Y,Y,Commodities
+DSRR2KU2N,JOYOX,LORD ABBETT,LORD ABBETT Bond Fund INST,FSINVRSRC9,Lord Abbett,US Fund Short-Term Bond,US Fund Short-Term Bond,N,Y,Y,Y,US Equity
+4LBJK66KE,ZGDKX,VANGUARD,VANGUARD Estate Fund INST,FSCAPW16HJ,Vanguard,US Fund Real Estate,US Fund Real Estate,N,Y,Y,Y,US Equity
+YX95OJW9B,DBSRX,BLACKROCK,BLACKROCK Bond Fund A,FSUSAPU2T8,BlackRock,US Fund High Yield Bond,US Fund High Yield Bond,N,Y,Y,Y,Fixed Income
+PCJPUF7VX,MKCBX,AMERICAN FUNDS,AMERICAN FUNDS Bond Fund A,FSUSAGDJF0,capital group,US Fund Short-Term Bond,US Fund Short-Term Bond,N,Y,Y,Y,International Equity
+5M8ZTA66T,EHJLX,PIMCO,PIMCO Growth Fund INST,FSUSAB1H0O,PIMCO,US Fund Large Growth,US Fund Large Growth,Y,Y,N,N,Alternative
+02G1K5JAW,UCEYX,AMERICAN FUNDS,AMERICAN FUNDS Blend Fund S,FSINVH1F43,capital group,US Fund Small Blend,US Fund Small Blend,N,Y,Y,Y,US Equity
+UG1MVJKQ5,KTNWX,MFS,MFS Bond Fund S,FSC1949705,MFS,US Fund Intermediate Core Bond,US Fund Intermediate Core Bond,N,Y,N,Y,Fixed Income
+TFRX245GB,QSLFX,DWS FUNDS,DWS FUNDS Growth Fund A,FSC3415478,DWS,US Fund Large Growth,US Fund Large Growth,N,N,N,Y,US Equity
+O9O2M470N,ZDJZX,JPMORGAN,JPMORGAN Bond Fund S,FSUSABEWRF,JPMorgan,US Fund Intermediate Core Bond,US Fund Intermediate Core Bond,N,Y,Y,Y,International Equity
+6NJWU7336,WMCVX,FIDELITY,FIDELITY Blend Fund C,FSC8618389,Fidelity,US Fund Small Blend,US Fund Small Blend,N,Y,Y,Y,International Equity
+LKK88412I,AALFX,FIRST EAGLE,FIRST EAGLE Allocation Fund S,FSCAPWRZNF,First Eagle,US Fund Moderate Allocation,US Fund Moderate Allocation,N,Y,Y,Y,Sector Equity
+BJ5YQWAK5,ZQYTX,BLACKROCK,BLACKROCK Bond Fund INST,FSINV0JPYH,BlackRock,US Fund Intermediate Core Bond,US Fund Intermediate Core Bond,N,N,Y,Y,Commodities
+PN9A7B726,DQYIX,NUVEEN,NUVEEN Allocation Fund A,FSINV0HJ0U,Nuveen,US Fund Moderate Allocation,US Fund Moderate Allocation,Y,N,Y,Y,US Equity
+FLAFLGNFT,BVXDX,T ROWE PRICE,T ROWE PRICE Bond Fund A,FSC9502401,T. Rowe Price,US Fund Intermediate Core Bond,US Fund Intermediate Core Bond,N,N,Y,Y,Fixed Income
+MZE9WY5WD,ATVCX,JPMORGAN,JPMORGAN Value Fund A,FSUSA3FIOZ,JPMorgan,US Fund Large Value,US Fund Large Value,N,Y,N,Y,Sector Equity
+CPV4H1RZF,UOXPX,DWS FUNDS,DWS FUNDS Growth Fund INST,FSUSAHM19Z,DWS,US Fund Small Growth,US Fund Small Growth,N,N,Y,N,US Equity
+NH3PF34HH,VQDIX,T ROWE PRICE,T ROWE PRICE Allocation Fund C,FSC0961209,T. Rowe Price,US Fund Moderate Allocation,US Fund Moderate Allocation,N,Y,Y,Y,International Equity
+MYDL0L89K,YODAX,NUVEEN,NUVEEN Growth Fund S,FSINVEA6AY,Nuveen,US Fund Large Growth,US Fund Large Growth,N,Y,Y,Y,Sector Equity
+TWU52IYBH,HVFVX,FRANKLIN TEMPLETON,FRANKLIN TEMPLETON Bond Fund A,FSUSAWD8NZ,Franklin Templeton,US Fund Multisector Bond,US Fund Multisector Bond,N,N,Y,Y,Fixed Income
+RJAL1TPNS,MVQKX,MFS,MFS Blend Fund C,FSC1501076,MFS,US Fund Small Blend,US Fund Small Blend,N,Y,Y,Y,Sector Equity
+M8RT419FG,WOAPX,MFS,MFS Value Fund C,FSINVQLY7I,MFS,US Fund Large Value,US Fund Large Value,N,Y,Y,Y,Fixed Income
+ODUX5X64O,NZEQX,LORD ABBETT,LORD ABBETT Blend Fund A,FSINVHMG3O,Lord Abbett,US Fund Small Blend,US Fund Small Blend,N,Y,Y,Y,Sector Equity
+YS5FVL5NT,GIYKX,AMERICAN FUNDS,AMERICAN FUNDS Blend Fund C,FSINV0DVES,capital group,US Fund Foreign Large Blend,US Fund Foreign Large Blend,N,Y,N,Y,Allocation
+EUTJ0W6M0,GNLOX,BLACKROCK,BLACKROCK Growth Fund INST,FSC1266460,BlackRock,US Fund Large Growth,US Fund Large Growth,N,Y,N,N,Fixed Income
+ECDC9YPP0,HIQWX,NUVEEN,NUVEEN Estate Fund INST,FSC1475947,Nuveen,US Fund Real Estate,US Fund Real Estate,Y,Y,Y,N,Allocation
+91Z4PE05S,AZCUX,T ROWE PRICE,T ROWE PRICE Bond Fund INST,FSC6570741,T. Rowe Price,US Fund High Yield Bond,US Fund High Yield Bond,N,N,Y,Y,Alternative
+9ERM9JVJ0,GVMOX,JPMORGAN,JPMORGAN Blend Fund C,FSUSA8Q72T,JPMorgan,US Fund Mid-Cap Blend,US Fund Mid-Cap Blend,N,N,Y,Y,Sector Equity
+LA6SZO61L,LKKDX,T ROWE PRICE,T ROWE PRICE Allocation Fund INST,FSUSACVHF1,T. Rowe Price,US Fund Moderate Allocation,US Fund Moderate Allocation,N,N,N,Y,Alternative
+KJUPQVUBQ,DSMHX,LORD ABBETT,LORD ABBETT Growth Fund C,FSCAPUC4WN,Lord Abbett,US Fund Small Growth,US Fund Small Growth,N,N,Y,Y,Commodities
+7UYS9W24X,PKEQX,FIDELITY,FIDELITY Bond Fund A,FSCAPZ985P,Fidelity,US Fund High Yield Bond,US Fund High Yield Bond,N,Y,Y,Y,International Equity
+ORXB6HXCK,UEDGX,PIMCO,PIMCO Blend Fund S,FSINV6EF38,PIMCO,US Fund Foreign Large Blend,US Fund Foreign Large Blend,N,Y,Y,N,Alternative
+O3VPK2U4A,PLJRX,JPMORGAN,JPMORGAN Blend Fund S,FSUSA12TEA,JPMorgan,US Fund Large Blend,US Fund Large Blend,N,Y,Y,Y,Sector Equity
+JOX505XF3,XIVDX,NUVEEN,NUVEEN Bond Fund A,FSCAPX81HI,Nuveen,US Fund Intermediate Core Bond,US Fund Intermediate Core Bond,N,Y,Y,Y,Allocation
+D9N1O5BQW,RKXWX,VANGUARD,VANGUARD Bond Fund C,FSINVOT2R7,Vanguard,US Fund High Yield Bond,US Fund High Yield Bond,N,Y,N,Y,International Equity
+FQP2I3X1O,DLRJX,NUVEEN,NUVEEN Blend Fund A,FSCAP05109,Nuveen,US Fund Mid-Cap Blend,US Fund Mid-Cap Blend,Y,Y,Y,Y,Commodities
+ASZ5G46TZ,IPXMX,NUVEEN,NUVEEN Bond Fund INV,FSCAPHHU2Z,Nuveen,US Fund Intermediate Core Bond,US Fund Intermediate Core Bond,N,Y,Y,Y,Fixed Income
+271B5O70A,RQZPX,JPMORGAN,JPMORGAN Bond Fund INST,FSC0768175,JPMorgan,US Fund Multisector Bond,US Fund Multisector Bond,N,N,Y,Y,International Equity
+ZMQP7RXKZ,HWMLX,T ROWE PRICE,T ROWE PRICE Blend Fund INST,FSCAPNA8P5,T. Rowe Price,US Fund Mid-Cap Blend,US Fund Mid-Cap Blend,Y,Y,Y,Y,Alternative
+2H1D2OW25,APLHX,PIMCO,PIMCO Bond Fund S,FSINVPWHSS,PIMCO,US Fund High Yield Bond,US Fund High Yield Bond,N,Y,Y,Y,US Equity
+V8B71KVAX,MOCTX,INVESCO,INVESCO Bond Fund C,FSC0611133,Invesco,US Fund Multisector Bond,US Fund Multisector Bond,N,Y,N,Y,Alternative
+K7JZQA1OX,BTPPX,NUVEEN,NUVEEN Blend Fund INST,FSC2983117,Nuveen,US Fund Small Blend,US Fund Small Blend,N,Y,Y,Y,Alternative
+0HY3FFW2G,IDZNX,PIMCO,PIMCO Allocation Fund A,FSINVJSWUM,PIMCO,US Fund Moderate Allocation,US Fund Moderate Allocation,N,N,Y,N,US Equity
+BC4PW8ZW7,KFLEX,JPMORGAN,JPMORGAN Bond Fund A,FSINVZI7GY,JPMorgan,US Fund Short-Term Bond,US Fund Short-Term Bond,N,N,N,Y,Fixed Income
+RRW24IVSR,ISQQX,PIMCO,PIMCO Growth Fund INST,FSC1319452,PIMCO,US Fund Small Growth,US Fund Small Growth,N,Y,Y,Y,Sector Equity
+VY96QZUSO,DPCUX,LORD ABBETT,LORD ABBETT Blend Fund INST,FSC3883216,Lord Abbett,US Fund Foreign Large Blend,US Fund Foreign Large Blend,N,Y,Y,Y,Alternative
+98NLI8CXU,UBRQX,JPMORGAN,JPMORGAN Growth Fund A,FSCAP5XGST,JPMorgan,US Fund Large Growth,US Fund Large Growth,N,Y,Y,Y,Sector Equity
+MBEAABRPX,UJVNX,NUVEEN,NUVEEN Blend Fund A,FSINVVMF3G,Nuveen,US Fund Mid-Cap Blend,US Fund Mid-Cap Blend,N,N,N,Y,Commodities
+SX52GWA65,VJPEX,FIRST EAGLE,FIRST EAGLE Estate Fund INST,FSINV2044B,First Eagle,US Fund Real Estate,US Fund Real Estate,N,N,Y,Y,Sector Equity
+6YRGC5FJ2,ODRLX,FRANKLIN TEMPLETON,FRANKLIN TEMPLETON Blend Fund S,FSC7946771,Franklin Templeton,US Fund Mid-Cap Blend,US Fund Mid-Cap Blend,Y,Y,Y,Y,International Equity
+2VUXLY81X,EGFHX,T ROWE PRICE,T ROWE PRICE Bond Fund A,FSUSABN9LT,T. Rowe Price,US Fund Multisector Bond,US Fund Multisector Bond,N,Y,N,Y,Fixed Income
+XOLXCY6FD,XUYCX,LORD ABBETT,LORD ABBETT Growth Fund INST,FSINVGNUGX,Lord Abbett,US Fund Small Growth,US Fund Small Growth,Y,Y,N,Y,Commodities
+P6W30Y28Z,BHHAX,FRANKLIN TEMPLETON,FRANKLIN TEMPLETON Blend Fund C,FSUSAHK9TD,Franklin Templeton,US Fund Foreign Large Blend,US Fund Foreign Large Blend,N,Y,Y,Y,Fixed Income
+444O050VR,ZCBAX,AMERICAN FUNDS,AMERICAN FUNDS Blend Fund INV,FSINVNCDAD,capital group,US Fund Large Blend,US Fund Large Blend,N,Y,Y,Y,Alternative
+ZW5448M46,FVAFX,FRANKLIN TEMPLETON,FRANKLIN TEMPLETON Bond Fund S,FSC2078471,Franklin Templeton,US Fund Intermediate Core Bond,US Fund Intermediate Core Bond,N,Y,N,Y,International Equity
+UCUXE5R4B,KKBLX,FIRST EAGLE,FIRST EAGLE Allocation Fund A,FSUSAYP2WF,First Eagle,US Fund Tactical Allocation,US Fund Tactical Allocation,N,Y,Y,Y,Sector Equity
+QVYDUKPUW,ROHKX,NUVEEN,NUVEEN Blend Fund A,FSUSA94NKU,Nuveen,US Fund Mid-Cap Blend,US Fund Mid-Cap Blend,N,Y,Y,Y,Fixed Income
+SSJHMOTOY,ZLGNX,AMERICAN FUNDS,AMERICAN FUNDS Allocation Fund A,FSC0645745,capital group,US Fund Tactical Allocation,US Fund Tactical Allocation,N,Y,Y,Y,Alternative
+VME942HQF,RBILX,MFS,MFS Allocation Fund A,FSUSAKFW9T,MFS,US Fund Moderate Allocation,US Fund Moderate Allocation,N,Y,Y,Y,Allocation
+O7X33EIC2,BHQRX,MFS,MFS Blend Fund INV,FSCAP05JYR,MFS,US Fund Small Blend,US Fund Small Blend,Y,Y,Y,Y,US Equity
+I53CD0ZNU,AHLBX,BLACKROCK,BLACKROCK Allocation Fund INST,FSCAPWE8Z3,BlackRock,US Fund Moderate Allocation,US Fund Moderate Allocation,N,Y,Y,Y,International Equity
+1W6RUD5WC,ZEUNX,FIDELITY,FIDELITY Growth Fund A,FSCAP2CS23,Fidelity,US Fund Small Growth,US Fund Small Growth,N,Y,N,Y,Allocation
+8K4PW5ND1,RVHZX,DWS FUNDS,DWS FUNDS Blend Fund S,FSINVY1FX2,DWS,US Fund Large Blend,US Fund Large Blend,N,Y,Y,Y,Fixed Income
+YJXRY9LRK,AFFJX,FIDELITY,FIDELITY Allocation Fund C,FSUSACIZJA,Fidelity,US Fund Tactical Allocation,US Fund Tactical Allocation,N,Y,Y,Y,US Equity
+YVWQJ8VV4,WYEJX,MFS,MFS Estate Fund C,FSINV3CKFR,MFS,US Fund Real Estate,US Fund Real Estate,N,Y,Y,Y,International Equity
