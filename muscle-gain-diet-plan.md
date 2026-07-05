@@ -199,5 +199,5 @@ Soak moong overnight → drain → keep in covered colander 24–36 h, rinse twi
 4. **Max 2 whole eggs/day**, unlimited whites.
 5. **Fix B12 and D with your doctor** — low levels blunt energy, recovery, and mood; food alone won't correct a 167 B12.
 6. **Iron trick**: lemon on everything, no chai/coffee within an hour of meals.
-7. **Creatine + whey are the only supplements worth buying.** Everything else is marketing.
+7. **Whey daily is the backbone of this plan; creatine is the only other supplement worth considering** (you've opted out for now — that's fine). Everything else is marketing.
 8. **Sleep 7–8 h.** Muscle is built in bed, not in the gym.
