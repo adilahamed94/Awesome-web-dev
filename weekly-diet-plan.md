@@ -1,134 +1,131 @@
 # Weekly Diet Plan (Mon–Sun)
 
-**Adil · 66 kg · Muscle gain · Eggitarian · ~2,600–2,700 kcal · 120–130 g protein daily**
+**Adil · 66 kg · Muscle gain · Eggitarian · ~2,600 kcal · 115–130 g protein daily**
 
-Assumes gym on **Monday, Wednesday, Friday** (swap days freely — just move the pre-workout banana + post-workout whey to whichever days you train). When you move to 4 days, make **Saturday** a training day and add the same two items.
+## Built around your actual day
 
-**Every day, no exceptions:**
-- 7:00 am — warm water + 5 soaked almonds + 2 walnuts
-- Raw salad with lunch and dinner, lemon squeezed over meals (iron absorption)
-- No tea/coffee within 1 hour of meals
-- 3–3.5 L water
+- **Before 11:15 am:** pre-workout bite → gym → breakfast → early lunch (all within ~2 hrs of each other)
+- **11:15 am – 10 pm:** work from home → **2 desk snacks are non-negotiable** — they carry ~30 g of protein across an 11-hour gap. Without them this plan fails.
+- **~10:00 pm:** dinner — kept lighter and low-oil since you sleep soon after (also better for your LDL)
+- Gym days assumed **Mon / Wed / Fri** (swap freely — the pre-workout bite and whey follow whichever days you train; 4th day later = Saturday)
+- **No capsicum, brinjal, or gourds anywhere.** Vegetable rotation: palak, methi, broccoli, cauliflower, green beans, peas, mushrooms, bhindi, cabbage, carrot, beetroot, corn, tomato-onion.
+
+### Daily skeleton
+
+| Slot | Workout day | Rest day |
+|---|---|---|
+| On waking | Warm water + 5 soaked almonds + 2 walnuts | Same |
+| ~30 min pre-gym | Banana + 2 dates + black coffee | — |
+| Post-gym / ~9:00 | **Breakfast + whey shake** | Breakfast (no whey) |
+| ~10:45–11:00 | **Early lunch** (cook's meal) | Same |
+| ~2:30 pm | **Desk snack 1** (protein-first) | Same |
+| ~6:00 pm | **Desk snack 2** (bigger — bridges to dinner) | Same + whey here if day is short on protein |
+| ~10:00 pm | Light dinner | Same |
 
 ---
 
 ## Week at a glance
 
-| Day | Breakfast | Lunch (cook) | Dinner | Gym |
-|---|---|---|---|---|
-| Mon | Overnight oats + whey | Rajma + rice + curd | Paneer tikka + veg + roti | ✅ |
-| Tue | Avocado toast + 2 boiled eggs | Chole + phulka + curd | Quinoa salad with paneer | — |
-| Wed | Egg bhurji + toast | Dal tadka + roti + palak | Tofu-veg stir fry + rice | ✅ |
-| Thu | Besan-paneer chilla | Soy chunk curry + rice | Egg white omelette + mushrooms | — |
-| Fri | Overnight oats + PB | Egg curry + roti | Paneer bhurji + roti | ✅ |
-| Sat | Greek yogurt muesli bowl | Veg khichdi + curd | Soy chunk pulao + raita | (4th day) |
-| Sun | Avocado toast + eggs | Paneer biryani + raita | Moong dal cheela + curd | — |
+| Day | Breakfast (~9:00) | Early lunch (~10:45) | Snack 1 (~2:30) | Snack 2 (~6:00) | Dinner (~10 pm) | Gym |
+|---|---|---|---|---|---|---|
+| Mon | Overnight oats + whey | Rajma + rice + curd + salad | Greek yogurt + pomegranate | Sprouts bhel + roasted chana | Paneer tikka + sautéed beans | ✅ |
+| Tue | Avocado toast + 2 boiled eggs | Chole + phulka + curd | Fruit + 1 tbsp peanut butter | Boiled chana chaat + guava | Moong dal cheela + curd | — |
+| Wed | Egg bhurji + toast + whey | Dal tadka + roti + palak + curd | Greek yogurt + seeds | Paneer cubes (100 g) + chaat masala + cucumber | Tofu-mushroom stir fry + small rice | ✅ |
+| Thu | Besan-paneer chilla + chutney | Soy chunk curry + rice + salad | Roasted chana + fruit | Carrot-cucumber + hummus + 2 boiled egg whites | Egg white omelette + mushrooms + toast | — |
+| Fri | Overnight oats + PB + whey | Egg curry + roti + salad | Milk + muesli (small bowl) | Sprouts bhel + peanuts | Paneer bhurji + 1 roti | ✅ |
+| Sat | Greek yogurt muesli bowl | Veg khichdi (moong-heavy) + curd | Fruit + almonds | Boiled corn chaat + roasted chana | Soy chunk pulao + raita | (4th) |
+| Sun | Avocado toast + eggs | **Relaxed meal:** paneer biryani + raita | Sprouts bhel | Greek yogurt | Light: dal + 1 roti + salad | — |
 
 ---
 
-## Monday — workout day (~128 g protein)
+## Day details
 
-| Time | Meal |
+### Monday — gym (~127 g protein)
+| Slot | Meal |
 |---|---|
-| 8:15 | Overnight oats (made Sunday night) + 1 scoop whey stirred in |
-| 11:00 | Sprouts bhel (1 bowl) + 1 guava |
-| 1:30 | Rajma (1.5 katori) + rice + cucumber raita + salad |
-| 4:45 | Banana + black coffee |
-| Post-gym | Whey shake (1 scoop in milk) |
-| 8:30 | Paneer tikka (150 g) + sautéed capsicum-onion + 1 roti |
-| 10:00 | Small glass warm milk |
+| Pre-gym | Banana + 2 dates + black coffee |
+| Breakfast | Overnight oats (made Sunday) + 1 scoop whey stirred in *(35 g)* |
+| Lunch 10:45 | Rajma 1.5 katori + rice + curd + salad *(27 g)* |
+| Snack 2:30 | Greek yogurt 200 g + pomegranate *(20 g)* |
+| Snack 6:00 | Sprouts bhel + handful roasted chana *(14 g)* |
+| Dinner 10:00 | Paneer tikka 150 g + sautéed green beans *(26 g)* |
 
-## Tuesday — rest day (~118 g protein)
-
-| Time | Meal |
+### Tuesday — rest (~113 g protein)
+| Slot | Meal |
 |---|---|
-| 8:15 | Avocado toast (2 slices) + 2 boiled eggs |
-| 11:00 | Greek yogurt (200 g) + pomegranate + pumpkin seeds |
-| 1:30 | Chole (1.5 katori) + 2 phulkas + curd + onion salad |
-| 5:00 | Roasted chana (handful) + 1 fruit |
-| 8:30 | Quinoa salad with paneer cubes (100 g) — big bowl |
-| 10:00 | Warm milk with 1 tsp chia |
+| Breakfast | Avocado toast (2 slices) + 2 boiled eggs *(20 g)* |
+| Lunch 10:45 | Chole 1.5 katori + 2 phulkas + curd + onion-tomato salad *(26 g)* |
+| Snack 2:30 | Apple/banana + 1 tbsp peanut butter *(5 g)* |
+| Snack 6:00 | Boiled chana chaat + guava; add whey in water if hungry *(12–37 g)* |
+| Dinner 10:00 | Moong dal cheela (2) + curd + mint chutney *(24 g)* |
 
-## Wednesday — workout day (~127 g protein)
-
-| Time | Meal |
+### Wednesday — gym (~128 g protein)
+| Slot | Meal |
 |---|---|
-| 8:15 | Egg bhurji (2 whole + 2 whites) + 2 whole-wheat toasts |
-| 11:00 | Boiled chana chaat with lemon + 1 guava |
-| 1:30 | Dal tadka + 2 rotis + palak sabzi + curd + salad |
-| 4:45 | Banana + black coffee |
-| Post-gym | Whey shake (1 scoop in milk) |
-| 8:30 | Tofu-veg stir fry (150 g tofu) + small bowl steamed rice |
-| 10:00 | Small glass warm milk |
+| Pre-gym | Banana + 2 dates + black coffee |
+| Breakfast | Egg bhurji (2 whole + 2 whites, onion-tomato-mushroom) + 2 toasts + whey in water *(45 g)* |
+| Lunch 10:45 | Dal tadka + 2 rotis + palak sabzi + curd *(26 g)* |
+| Snack 2:30 | Greek yogurt 150 g + pumpkin seeds *(16 g)* |
+| Snack 6:00 | Paneer cubes 100 g with chaat masala + cucumber sticks *(18 g)* |
+| Dinner 10:00 | Tofu-mushroom-broccoli stir fry (150 g tofu) + small bowl rice *(20 g)* |
 
-## Thursday — rest day (~117 g protein)
-
-| Time | Meal |
+### Thursday — rest (~115 g protein)
+| Slot | Meal |
 |---|---|
-| 8:15 | Besan-moong chilla (2) stuffed with paneer (50 g) + mint chutney |
-| 11:00 | 1 fruit + roasted chana |
-| 1:30 | Soy chunk curry + rice + salad |
-| 5:00 | Carrot-cucumber sticks + hummus |
-| 8:30 | Egg white omelette (4 whites + 1 whole) + toast + sautéed mushrooms |
-| 10:00 | Greek yogurt (100 g) |
+| Breakfast | Besan-moong chilla (2) stuffed with paneer 50 g + chutney *(25 g)* |
+| Lunch 10:45 | Soy chunk curry + rice + salad *(30 g)* |
+| Snack 2:30 | Roasted chana + 1 fruit *(8 g)* |
+| Snack 6:00 | Carrot-cucumber sticks + hummus + 2 boiled egg whites *(12 g)* |
+| Dinner 10:00 | Egg white omelette (4 whites + 1 whole) + sautéed mushrooms + 1 toast *(24 g)* |
 
-## Friday — workout day (~126 g protein)
-
-| Time | Meal |
+### Friday — gym (~126 g protein)
+| Slot | Meal |
 |---|---|
-| 8:15 | Overnight oats + 1 tbsp peanut butter + banana |
-| 11:00 | Sprouts bhel + 1 orange/guava |
-| 1:30 | Egg curry (2 eggs) + 2 rotis + salad |
-| 4:45 | Banana + black coffee |
-| Post-gym | Whey shake (1 scoop in milk) |
-| 8:30 | Paneer bhurji (150 g) + 1 roti + salad |
-| 10:00 | Small glass warm milk |
+| Pre-gym | Banana + 2 dates + black coffee |
+| Breakfast | Overnight oats + 1 tbsp peanut butter + whey stirred in *(36 g)* |
+| Lunch 10:45 | Egg curry (2 eggs) + 2 rotis + salad *(24 g)* |
+| Snack 2:30 | Small bowl muesli with milk *(10 g)* |
+| Snack 6:00 | Sprouts bhel + roasted peanuts *(14 g)* |
+| Dinner 10:00 | Paneer bhurji 150 g + 1 roti + salad *(26 g)* |
 
-## Saturday — rest day now, 4th workout day later (~120 g protein)
-
-| Time | Meal |
+### Saturday — rest now, 4th gym day later (~117 g protein)
+| Slot | Meal |
 |---|---|
-| 8:30 | Greek yogurt bowl (200 g) + muesli + banana + honey + seeds |
-| 11:30 | Boiled corn / chana chaat |
-| 1:30 | Moong-heavy veg khichdi + curd + roasted papad + salad |
-| 5:00 | Peanuts (roasted, handful) + fruit |
-| 8:30 | Soy chunk pulao + cucumber raita |
-| 10:00 | Warm milk |
+| Breakfast | Greek yogurt 200 g + muesli + banana + honey + seeds *(24 g)* |
+| Lunch 10:45 | Moong-heavy veg khichdi (peas-carrot-beans) + curd + salad *(24 g)* |
+| Snack 2:30 | Fruit + 10 almonds *(5 g)* |
+| Snack 6:00 | Boiled corn chaat + roasted chana *(12 g)* |
+| Dinner 10:00 | Soy chunk pulao + cucumber raita *(28 g)* |
 
-*When Saturday becomes a gym day: add banana at 4:45 + whey shake post-workout.*
+*When Saturday becomes a gym day: add the pre-gym banana + whey with breakfast.*
 
-## Sunday — rest + prep day (~115 g protein)
-
-| Time | Meal |
+### Sunday — rest + prep (~110 g protein)
+| Slot | Meal |
 |---|---|
-| Morning | **Weigh yourself before breakfast — log it** |
-| 8:30 | Avocado toast + 2 poached/boiled eggs |
-| 11:30 | Fruit + handful roasted chana |
-| 1:30 | **Relaxed meal:** paneer biryani + raita + salad (restaurant OK — avoid deep-fried sides and sugary drinks) |
-| 5:00 | Sprouts bhel |
-| 8:30 | Moong dal cheela (2) + curd — keep dinner light |
-| 10:00 | Warm milk |
+| Morning | **Weigh in before breakfast — log it** |
+| Breakfast | Avocado toast + 2 poached/boiled eggs *(20 g)* |
+| Lunch 10:45 | **Relaxed meal:** paneer biryani + raita (restaurant OK — skip fried sides + sugary drinks) *(28 g)* |
+| Snack 2:30 | Sprouts bhel *(9 g)* |
+| Snack 6:00 | Greek yogurt 200 g *(20 g)* |
+| Dinner 10:00 | Light: dal 1 katori + 1 roti + salad *(14 g)* |
 
-### Sunday 30-minute prep block (makes the whole week easy)
-1. Soak whole moong for sprouts (ready Tue–Wed) and rajma/chole for Mon–Tue lunches
-2. Make 2 jars of overnight oats (Mon + one spare)
-3. Boil 6 eggs, refrigerate (grab-and-go protein)
-4. Cook 1 batch quinoa (fridge, 2 days) for Tuesday's dinner
-5. Check stock: eggs, paneer, curd, whey, fruit — order on Instamart
+### Sunday 30-minute prep block
+1. Soak whole moong (sprouts ready Tue–Wed) + rajma/chole for Mon–Tue lunches
+2. Make 2 jars overnight oats (Mon + Wed backup)
+3. Boil 6 eggs → fridge (desk-snack protein all week)
+4. Batch-cook quinoa if using for the week's salads
+5. Restock on Instamart: eggs, paneer, Greek yogurt, curd, fruit, milk
 
 ---
 
-## Weekly totals to hit
+## Rules for this schedule
 
-| Metric | Target |
-|---|---|
-| Protein | 115–130 g every single day |
-| Weight gain | ~0.25 kg/week (weigh Sunday) |
-| Eggs | ~18–20/week (max 2 whole/day, whites free) |
-| Paneer/tofu | ~700–800 g/week |
-| Sprouts/legumes | 1 serving daily minimum |
-| Creatine | 3–5 g daily, even rest days |
+1. **Never skip the 6 pm snack.** It's an 11-hour gap otherwise — you'll lose muscle in that window faster than you build it in the gym.
+2. **Lunch at 10:45 is your biggest meal** — you're about to sit for 11 hours, so all the rice/roti mostly lives here and at breakfast, not at 10 pm.
+3. **Dinner stays light + low-oil** — you're asleep within ~2 hrs, and your LDL (174) doesn't want a heavy fried meal at 10 pm.
+4. Keep a **shaker + whey at your desk** — any day the snacks fall through, whey in water is the rescue.
+5. Boiled eggs in the fridge = zero-effort desk protein. Six every Sunday.
+6. Creatine 3–5 g daily — with any meal, even rest days.
+7. Weigh-in Sunday morning: flat after 3 weeks → add a banana-PB shake at 2:30; gaining >0.5 kg/week → drop the 2:30 snack carbs.
 
-**If weight is flat after 3 weeks:** add 1 banana-PB shake daily. **If gaining >0.5 kg/week:** halve the bedtime milk and reduce rice by ⅓.
-
-> ⚠️ Reminder from your labs: get B12 + Vitamin D supplements prescribed, and mention the TSH of 6.11 at the same visit. These affect your recovery more than any food choice on this page.
+> ⚠️ From your labs: get B12 + D3 prescribed and mention the TSH (6.11) — one doctor visit. These matter more for recovery than anything on this page.

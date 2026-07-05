@@ -42,22 +42,23 @@
 
 ---
 
-## 3. Daily meal structure
+## 3. Daily meal structure (fitted to your schedule)
 
-Same skeleton every day; rotate the options in section 4.
+All main meals land before 11:15 am; two desk snacks carry you through the WFH stretch; dinner is ~10 pm.
 
 | Time | Meal | Protein |
 |---|---|---|
-| 7:00 am | Warm water + 5 soaked almonds + 2 walnuts | 3 g |
-| 8:00–8:30 am | **Breakfast** (rotate: overnight oats / avocado toast + eggs / besan chilla / egg bhurji) | 20–30 g |
-| 11:00 am | **Mid-morning**: fruit + roasted chana OR sprouts salad (raw) | 8–10 g |
-| 1:30 pm | **Lunch** (cook makes this): dal/rajma/chole + roti/rice + sabzi + curd + salad | 25–30 g |
-| 4:30–5:00 pm | **Pre-workout**: banana + black coffee, or peanut butter toast | 5 g |
-| Post-workout | **Whey shake** in water/milk (~30 g protein) | 25–30 g |
-| 8:00–8:30 pm | **Dinner** (rotate: paneer/tofu/soy chunks/quinoa salad + veg) | 25–30 g |
-| 10:00 pm (optional) | Warm milk or Greek yogurt with chia | 8–10 g |
+| On waking | Warm water + 5 soaked almonds + 2 walnuts | 3 g |
+| ~30 min pre-gym | **Pre-workout**: banana + 2 dates + black coffee (gym days only) | 1 g |
+| Post-gym ~9:00 am | **Breakfast + whey shake** (rotate: overnight oats / avocado toast + eggs / besan chilla / egg bhurji) | 35–45 g |
+| 10:45–11:00 am | **Early lunch** (cook makes this): dal/rajma/chole + roti/rice + sabzi + curd + salad — biggest meal of the day | 25–30 g |
+| ~2:30 pm | **Desk snack 1**: Greek yogurt / fruit + peanut butter / roasted chana | 10–20 g |
+| ~6:00 pm | **Desk snack 2** (bigger): sprouts bhel / paneer cubes / boiled eggs + hummus sticks | 12–20 g |
+| ~10:00 pm | **Dinner** — light + low-oil (rotate: paneer/tofu/cheela/omelette + veg) | 24–28 g |
 
-**Rest days:** skip the pre-workout banana and shake; replace shake with 100 g Greek yogurt or 150 g paneer at dinner. Everything else stays the same.
+**Rest days:** skip the pre-gym banana; have whey with the 6 pm snack instead of breakfast if the day runs short on protein.
+
+**The two desk snacks are non-negotiable** — lunch at 11 to dinner at 10 is an 11-hour gap; without ~30 g of protein in between, you lose muscle in that window faster than you build it in the gym.
 
 ---
 
@@ -67,7 +68,7 @@ Same skeleton every day; rotate the options in section 4.
 
 1. **Overnight oats** — 60 g rolled oats + 250 ml milk + 1 tbsp chia + 1 tbsp peanut butter + banana + cinnamon. Refrigerate overnight. *(~22 g protein, huge soluble fiber — actively lowers LDL)*
 2. **Avocado toast + eggs** — 2 slices whole-wheat/sourdough bread, ½ avocado mashed with lemon-salt-chilli flakes, 2 boiled or poached eggs on top. *(~20 g protein)*
-3. **Egg bhurji** (2 whole + 2 whites) with onion-tomato-capsicum, 1 tsp olive oil, + 2 whole-wheat toasts. *(~26 g protein)*
+3. **Egg bhurji** (2 whole + 2 whites) with onion-tomato-mushroom, 1 tsp olive oil, + 2 whole-wheat toasts. *(~26 g protein)*
 4. **Besan-moong chilla** (2) stuffed with crumbled paneer (50 g), mint chutney. *(~25 g protein)*
 5. **Greek yogurt bowl** — 200 g Greek yogurt + muesli + pomegranate + honey + pumpkin seeds. *(~22 g protein)*
 
@@ -91,6 +92,7 @@ Rotate through the week:
 7. Mixed veg khichdi (moong dal heavy) + curd + papad (roasted, not fried)
 
 **Standing rules for the cook:**
+- **No capsicum, brinjal, or gourds** (lauki, turai, karela, parwal, tinda). Vegetable rotation: palak, methi, broccoli, cauliflower, green beans, peas, mushrooms, bhindi, cabbage, carrot, beetroot, corn.
 - Cooking oil: **olive/mustard/groundnut oil, max 3–4 tsp per meal. No ghee, butter, or vanaspati.** (LDL is high)
 - No deep frying — sauté, roast, steam, pressure-cook
 - Iodized salt only (TSH)
@@ -112,7 +114,7 @@ Rotate through the week:
 
 ### Quinoa salad (2 servings)
 1. Rinse 1 cup quinoa, boil in 2 cups water 15 min until fluffy. Cool.
-2. Add: cucumber, tomato, onion, boiled corn, capsicum (vitamin C), boiled chana or 100 g paneer cubes.
+2. Add: cucumber, tomato, onion, boiled corn, grated carrot, boiled chana or 100 g paneer cubes.
 3. Dress: 1 tbsp olive oil, juice of 1 lemon, salt, pepper, chaat masala, coriander.
 4. Optional: pomegranate + roasted peanuts on top.
 *~20 g protein/serving with paneer; keeps 2 days in fridge.*
@@ -130,7 +132,7 @@ Halve avocado (buy 2–3 days ahead — they ripen slowly), mash with lemon, sal
 *~30 g protein per serving.*
 
 ### Paneer tikka (no tandoor)
-Cube 200 g paneer. Marinate 30 min: 3 tbsp thick curd + ginger-garlic paste + kasuri methi + chilli powder + turmeric + salt + 1 tsp oil. Sear on hot tawa/air-fry 12 min at 200°C with capsicum and onion.
+Cube 200 g paneer. Marinate 30 min: 3 tbsp thick curd + ginger-garlic paste + kasuri methi + chilli powder + turmeric + salt + 1 tsp oil. Sear on hot tawa/air-fry 12 min at 200°C with onion and mushroom.
 
 ### Sprouts (batch, weekly)
 Soak moong overnight → drain → keep in covered colander 24–36 h, rinse twice daily. Fridge for the week. Eat raw as bhel or lightly steamed.
@@ -146,7 +148,7 @@ Soak moong overnight → drain → keep in covered colander 24–36 h, rinse twi
 - Greek yogurt (Epigamia / Milky Mist high-protein tubs)
 - Milk + curd (Nandini)
 - Avocados 2–3, bananas, papaya/guava, pomegranate, seasonal fruit
-- Vegetables: spinach/palak, mushrooms, capsicum (all colors), broccoli, cucumber, tomato, onion, carrot, beetroot, lemons
+- Vegetables: spinach/palak, mushrooms, broccoli, cauliflower, green beans, peas, bhindi, cucumber, tomato, onion, carrot, beetroot, lemons
 - Whole-wheat / sourdough bread (The Baker's Dozen is on Swiggy/Instamart in Bangalore)
 - Mint + coriander
 
@@ -174,19 +176,18 @@ Soak moong overnight → drain → keep in covered colander 24–36 h, rinse twi
 
 ---
 
-## 7. Sample day (workout day, ~2,650 kcal / ~128 g protein)
+## 7. Sample day (workout day, ~2,650 kcal / ~127 g protein)
 
 | Meal | Food | Protein |
 |---|---|---|
-| 7:00 | 5 almonds + 2 walnuts | 3 g |
-| 8:15 | Overnight oats + 1 boiled egg | 28 g |
-| 11:00 | Sprouts bhel + 1 guava | 10 g |
-| 1:30 | Rajma (1.5 katori) + rice + curd + salad | 27 g |
-| 4:45 | Banana + black coffee | 1 g |
-| 7:15 (post-gym) | Whey shake in milk | 32 g |
-| 8:30 | Paneer tikka (150 g) + sautéed veg + 1 roti | 24 g |
-| 10:00 | Warm milk (small) | 4 g |
-| | **Total** | **~129 g** |
+| On waking | 5 almonds + 2 walnuts | 3 g |
+| Pre-gym | Banana + 2 dates + black coffee | 1 g |
+| ~9:00 (post-gym) | Overnight oats + 1 scoop whey stirred in | 35 g |
+| 10:45 | Rajma (1.5 katori) + rice + curd + salad | 27 g |
+| 2:30 pm | Greek yogurt (200 g) + pomegranate | 20 g |
+| 6:00 pm | Sprouts bhel + roasted chana | 14 g |
+| 10:00 pm | Paneer tikka (150 g) + sautéed green beans + 1 roti | 26 g |
+| | **Total** | **~126 g** |
 
 ---
 
