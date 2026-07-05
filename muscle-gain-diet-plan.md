@@ -44,21 +44,20 @@
 
 ## 3. Daily meal structure (fitted to your schedule)
 
-All main meals land before 11:15 am; two desk snacks carry you through the WFH stretch; dinner is ~10 pm.
+All main meals land before 11:15 am; one ~6 pm snack on **alternate days only** (lined up with gym days); dinner is ~10 pm.
 
 | Time | Meal | Protein |
 |---|---|---|
 | On waking | Warm water + 5 soaked almonds + 2 walnuts | 3 g |
 | ~30 min pre-gym | **Pre-workout**: banana + 2 dates + black coffee (gym days only) | 1 g |
-| Post-gym ~9:00 am | **Breakfast + whey shake** (rotate: overnight oats / avocado toast + eggs / besan chilla / egg bhurji) | 35–45 g |
-| 10:45–11:00 am | **Early lunch** (cook makes this): dal/rajma/chole + roti/rice + sabzi + curd + salad — biggest meal of the day | 25–30 g |
-| ~2:30 pm | **Desk snack 1**: Greek yogurt / fruit + peanut butter / roasted chana | 10–20 g |
-| ~6:00 pm | **Desk snack 2** (bigger): sprouts bhel / paneer cubes / boiled eggs + hummus sticks | 12–20 g |
-| ~10:00 pm | **Dinner** — light + low-oil (rotate: paneer/tofu/cheela/omelette + veg) | 24–28 g |
+| Post-gym ~9:00 am | **Breakfast + whey shake — whey every day, gym or not** (rotate: overnight oats / avocado toast + eggs / besan chilla / egg bhurji) | 40–50 g |
+| 10:45–11:00 am | **Early lunch** (cook makes this): dal/rajma/chole + roti/rice + sabzi + curd + salad — biggest meal of the day | 25–33 g |
+| ~6:00 pm | **Snack — alternate days (Mon/Wed/Fri/Sun)**: sprouts bhel / paneer cubes / Greek yogurt | 14–20 g |
+| ~10:00 pm | **Dinner** — low-oil; **bigger portion on no-snack days** (rotate: paneer/tofu/cheela/omelette + veg) | 24–32 g |
 
-**Rest days:** skip the pre-gym banana; have whey with the 6 pm snack instead of breakfast if the day runs short on protein.
+**Why whey moved to breakfast daily:** with only 3–4 eating occasions, breakfast has to carry 40+ g protein or the day can't reach target.
 
-**The two desk snacks are non-negotiable** — lunch at 11 to dinner at 10 is an 11-hour gap; without ~30 g of protein in between, you lose muscle in that window faster than you build it in the gym.
+**No-snack days (Tue/Thu/Sat):** lunch gets extra curd/dal and dinner is deliberately bigger (200 g paneer / 3 cheelas / extra egg whites). If mid-afternoon hunger bites, whey in water at your desk is the 2-minute rescue.
 
 ---
 
@@ -176,7 +175,7 @@ Soak moong overnight → drain → keep in covered colander 24–36 h, rinse twi
 
 ---
 
-## 7. Sample day (workout day, ~2,650 kcal / ~127 g protein)
+## 7. Sample day (gym + snack day, ~2,550 kcal / ~117 g protein)
 
 | Meal | Food | Protein |
 |---|---|---|
@@ -184,10 +183,11 @@ Soak moong overnight → drain → keep in covered colander 24–36 h, rinse twi
 | Pre-gym | Banana + 2 dates + black coffee | 1 g |
 | ~9:00 (post-gym) | Overnight oats + 1 scoop whey stirred in | 35 g |
 | 10:45 | Rajma (1.5 katori) + rice + curd + salad | 27 g |
-| 2:30 pm | Greek yogurt (200 g) + pomegranate | 20 g |
 | 6:00 pm | Sprouts bhel + roasted chana | 14 g |
-| 10:00 pm | Paneer tikka (150 g) + sautéed green beans + 1 roti | 26 g |
-| | **Total** | **~126 g** |
+| 10:00 pm | Paneer tikka (200 g) + sautéed green beans + 1 roti | 32 g |
+| | **Total** | **~112 g** |
+
+*(No-snack days: skip the 6 pm slot, add whey at breakfast + extra curd at lunch + bigger dinner — same total.)*
 
 ---
 
