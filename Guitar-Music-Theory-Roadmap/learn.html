@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Guitar Theory — Daily Trainer</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+    :root {
+      --bg: #0d0f14; --bg2: #13161e; --bg3: #1a1e29;
+      --surface: #1e2330; --surface2: #252b3b; --border: #2e3548;
+      --text: #e2e8f0; --text2: #94a3b8; --text3: #64748b;
+      --accent: #7c3aed; --accent2: #a855f7;
+      --gold: #f59e0b; --green: #10b981; --red: #ef4444; --cyan: #06b6d4;
+      --nav-h: 68px; --header-h: 56px;
+    }
+    html, body { height: 100%; overflow: hidden; background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; }
+
+    /* ── App shell ── */
+    #app { display: flex; flex-direction: column; height: 100dvh; overflow: hidden; }
+
+    header {
+      height: var(--header-h); flex-shrink: 0;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 1.1rem;
+      background: var(--bg2); border-bottom: 1px solid var(--border);
+    }
+    .header-title { font-weight: 800; font-size: 1rem; }
+    .header-sub { font-size: .7rem; color: var(--text3); }
+    .streak-badge {
+      display: flex; align-items: center; gap: .35rem;
+      background: rgba(245,158,11,.15); border: 1px solid rgba(245,158,11,.3);
+      border-radius: 999px; padding: .3rem .8rem;
+      font-size: .82rem; font-weight: 700; color: var(--gold);
+    }
+
+    .panels { flex: 1; overflow-y: auto; overflow-x: hidden; }
+    .panel { display: none; padding: 1rem; min-height: 100%; }
+    .panel.active { display: block; }
+
+    /* ── Bottom nav ── */
+    .bottom-nav {
+      height: var(--nav-h); flex-shrink: 0;
+      display: flex;
+      background: var(--bg2); border-top: 1px solid var(--border);
+      padding-bottom: env(safe-area-inset-bottom, 0);
+    }
+    .nav-btn {
+      flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: .25rem; background: none; border: none; color: var(--text3);
+      font-size: .65rem; font-weight: 600; cursor: pointer;
+      transition: color .15s; padding: .5rem;
+    }
+    .nav-btn .nav-icon { font-size: 1.35rem; line-height: 1; }
+    .nav-btn.active { color: var(--accent2); }
+
+    /* ── Shared card ── */
+    .card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 14px; padding: 1.1rem;
+      margin-bottom: 1rem;
+    }
+    .card-title { font-size: .7rem; text-transform: uppercase; letter-spacing: .09em; color: var(--text3); font-weight: 700; margin-bottom: .6rem; }
+
+    /* ── Score strip ── */
+    .score-strip {
+      display: flex; gap: .75rem; margin-bottom: 1rem;
+    }
+    .score-box {
+      flex: 1; background: var(--surface); border: 1px solid var(--border);
+      border-radius: 10px; padding: .6rem; text-align: center;
+    }
+    .score-box .val { font-size: 1.5rem; font-weight: 900; color: var(--accent2); }
+    .score-box .lbl { font-size: .65rem; color: var(--text3); text-transform: uppercase; letter-spacing: .07em; }
+
+    /* ── Big display ── */
+    .big-display {
+      background: var(--bg3); border: 1px solid var(--border);
+      border-radius: 14px; padding: 1.5rem; text-align: center;
+      margin-bottom: 1rem;
+    }
+    .big-display .big-label { font-size: .72rem; color: var(--text3); text-transform: uppercase; letter-spacing: .09em; margin-bottom: .35rem; }
+    .big-display .big-value { font-size: 1.8rem; font-weight: 900; color: var(--text); }
+    .big-display .big-sub { font-size: .85rem; color: var(--text2); margin-top: .25rem; }
+
+    /* ── Answer grid ── */
+    .answer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; margin-bottom: 1rem; }
+    .answer-btn {
+      padding: 1rem .5rem; background: var(--surface2); border: 2px solid var(--border);
+      border-radius: 12px; color: var(--text); font-size: .9rem; font-weight: 600;
+      cursor: pointer; transition: all .15s; min-height: 56px;
+    }
+    .answer-btn:active { transform: scale(.97); }
+    .answer-btn.correct { background: rgba(16,185,129,.2); border-color: var(--green); color: var(--green); }
+    .answer-btn.wrong   { background: rgba(239,68,68,.15); border-color: var(--red);   color: var(--red);   }
+    .answer-btn:disabled { opacity: .6; cursor: default; }
+
+    /* ── Action button ── */
+    .action-btn {
+      width: 100%; padding: .9rem; border: none; border-radius: 12px;
+      font-size: .95rem; font-weight: 700; cursor: pointer;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: #fff; transition: opacity .15s; margin-bottom: .75rem;
+    }
+    .action-btn:active { opacity: .85; }
+    .action-btn.secondary {
+      background: var(--surface2); border: 1px solid var(--border); color: var(--text2);
+    }
+
+    /* ── Feedback banner ── */
+    .feedback {
+      text-align: center; font-size: 1rem; font-weight: 700;
+      padding: .6rem; border-radius: 10px; margin-bottom: .75rem;
+      transition: opacity .3s;
+    }
+    .feedback.correct { background: rgba(16,185,129,.15); color: var(--green); }
+    .feedback.wrong   { background: rgba(239,68,68,.12);  color: var(--red);   }
+    .feedback.hidden  { opacity: 0; pointer-events: none; }
+
+    /* ── Ear: listen mode toggle ── */
+    .toggle-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: .75rem; font-size: .85rem; color: var(--text2); }
+    .toggle { position: relative; width: 40px; height: 22px; }
+    .toggle input { opacity: 0; width: 0; height: 0; }
+    .toggle-track {
+      position: absolute; inset: 0; background: var(--surface2); border-radius: 999px;
+      border: 1px solid var(--border); cursor: pointer; transition: background .2s;
+    }
+    .toggle-thumb {
+      position: absolute; top: 2px; left: 2px; width: 16px; height: 16px;
+      border-radius: 50%; background: var(--text3); transition: transform .2s, background .2s;
+    }
+    .toggle input:checked + .toggle-track { background: var(--accent); border-color: var(--accent); }
+    .toggle input:checked ~ .toggle-thumb { transform: translateX(18px); background: #fff; }
+
+    .level-badge {
+      display: inline-block; padding: .2rem .7rem; border-radius: 999px;
+      font-size: .72rem; font-weight: 700; background: rgba(168,85,247,.15);
+      border: 1px solid rgba(168,85,247,.3); color: var(--accent2); margin-bottom: .75rem;
+    }
+
+    /* ── Fretboard: string indicator ── */
+    .string-indicator {
+      display: flex; gap: .4rem; justify-content: center;
+      margin-bottom: .75rem; flex-wrap: wrap;
+    }
+    .str-dot {
+      width: 32px; height: 32px; border-radius: 50%; background: var(--surface2);
+      border: 2px solid var(--border); display: flex; align-items: center;
+      justify-content: center; font-size: .7rem; font-weight: 700; color: var(--text3);
+      cursor: pointer; transition: all .15s;
+    }
+    .str-dot.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+    /* ── Modes: flashcard ── */
+    .flashcard-wrap { perspective: 1000px; margin-bottom: 1rem; }
+    .flashcard {
+      position: relative; height: 240px;
+      transform-style: preserve-3d; transition: transform .45s ease;
+      cursor: pointer;
+    }
+    .flashcard.flipped { transform: rotateY(180deg); }
+    .card-face {
+      position: absolute; inset: 0; backface-visibility: hidden;
+      border-radius: 16px; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; padding: 1.5rem; text-align: center;
+      border: 2px solid var(--border);
+    }
+    .card-front { background: var(--surface); }
+    .card-back  { background: var(--bg3); transform: rotateY(180deg); }
+
+    .mode-number { font-size: .72rem; color: var(--text3); text-transform: uppercase; letter-spacing: .1em; margin-bottom: .5rem; }
+    .mode-name-big { font-size: 2.4rem; font-weight: 900; margin-bottom: .5rem; }
+    .mode-feel-tag {
+      display: inline-block; padding: .25rem .8rem; border-radius: 999px;
+      font-size: .78rem; border: 1px solid currentColor; opacity: .7;
+    }
+    .tap-hint { position: absolute; bottom: .75rem; right: .9rem; font-size: .68rem; color: var(--text3); }
+
+    .mode-formula { font-family: monospace; font-size: .95rem; color: var(--accent2); margin-bottom: .6rem; }
+    .mode-degrees { font-size: .82rem; color: var(--text2); margin-bottom: .5rem; font-family: monospace; }
+    .mode-chord-label { font-size: .72rem; color: var(--text3); margin-bottom: .2rem; }
+    .mode-chord-val { font-size: 1rem; font-weight: 700; margin-bottom: .6rem; }
+    .mode-haken-tag {
+      font-size: .75rem; padding: .2rem .6rem; border-radius: 999px;
+      background: rgba(245,158,11,.1); border: 1px solid rgba(245,158,11,.3); color: var(--gold);
+    }
+
+    .mode-nav { display: flex; gap: .6rem; margin-bottom: .75rem; }
+    .mode-nav-btn {
+      flex: 1; padding: .7rem; border-radius: 10px; border: 1px solid var(--border);
+      background: var(--surface2); color: var(--text2); font-size: .9rem;
+      font-weight: 700; cursor: pointer; transition: all .15s;
+    }
+    .mode-nav-btn:active { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .mode-dots { display: flex; justify-content: center; gap: .4rem; margin-bottom: .75rem; }
+    .mode-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--surface2); border: 1px solid var(--border); transition: all .2s; }
+    .mode-dot.active { background: var(--accent2); border-color: var(--accent2); }
+
+    /* ── Theory ── */
+    .progress-bar-wrap { height: 4px; background: var(--surface2); border-radius: 2px; margin-bottom: 1rem; }
+    .progress-bar-fill { height: 100%; border-radius: 2px; background: var(--accent2); transition: width .3s; }
+    .q-text { font-size: 1.05rem; font-weight: 600; line-height: 1.5; margin-bottom: 1.25rem; color: var(--text); }
+    .q-counter { font-size: .75rem; color: var(--text3); margin-bottom: .5rem; }
+
+    .result-screen { text-align: center; padding: 2rem 1rem; }
+    .result-emoji { font-size: 3.5rem; margin-bottom: .75rem; }
+    .result-score { font-size: 2.5rem; font-weight: 900; color: var(--accent2); margin-bottom: .5rem; }
+    .result-msg { color: var(--text2); margin-bottom: 1.75rem; }
+
+    /* ── Animations ── */
+    @keyframes pop { 0%,100%{transform:scale(1)} 50%{transform:scale(1.08)} }
+    .pop { animation: pop .25s ease; }
+  </style>
+</head>
+<body>
+<div id="app">
+
+  <header>
+    <div>
+      <div class="header-title">Theory Trainer</div>
+      <div class="header-sub">Away from guitar</div>
+    </div>
+    <div class="streak-badge">
+      <span>&#128293;</span>
+      <span id="streak-count">0</span>
+      <span style="font-size:.7rem;font-weight:400;color:var(--text3)">day streak</span>
+    </div>
+  </header>
+
+  <div class="panels">
+
+    <!-- ──────── EAR TRAINING ──────── -->
+    <div class="panel active" id="panel-ear">
+      <div class="score-strip">
+        <div class="score-box"><div class="val" id="ear-correct">0</div><div class="lbl">Correct</div></div>
+        <div class="score-box"><div class="val" id="ear-pct">—</div><div class="lbl">Accuracy</div></div>
+        <div class="score-box"><div class="val" id="ear-level">1</div><div class="lbl">Level</div></div>
+      </div>
+
+      <div class="toggle-row">
+        <span>Listen Mode (hear label with note)</span>
+        <label class="toggle">
+          <input type="checkbox" id="listen-mode-toggle">
+          <div class="toggle-track"></div>
+          <div class="toggle-thumb"></div>
+        </label>
+      </div>
+
+      <div class="level-badge" id="ear-level-badge">Level 1 — Starter Intervals</div>
+
+      <div class="big-display" id="ear-display">
+        <div class="big-label">Interval</div>
+        <div class="big-value" id="ear-interval-name">—</div>
+        <div class="big-sub" id="ear-interval-sub">Press play to hear an interval</div>
+      </div>
+
+      <button class="action-btn" id="ear-play-btn" onclick="earPlay()">&#9654; Play Interval</button>
+
+      <div class="feedback hidden" id="ear-feedback">—</div>
+
+      <div class="answer-grid" id="ear-answers"></div>
+    </div>
+
+    <!-- ──────── FRETBOARD QUIZ ──────── -->
+    <div class="panel" id="panel-fret">
+      <div class="score-strip">
+        <div class="score-box"><div class="val" id="fret-correct">0</div><div class="lbl">Correct</div></div>
+        <div class="score-box"><div class="val" id="fret-pct">—</div><div class="lbl">Accuracy</div></div>
+        <div class="score-box"><div class="val" id="fret-total">0</div><div class="lbl">Answered</div></div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Focus on strings (tap to toggle)</div>
+        <div class="string-indicator" id="string-filter"></div>
+      </div>
+
+      <div class="big-display">
+        <div class="big-label">What note is here?</div>
+        <div class="big-value" id="fret-position">—</div>
+        <div class="big-sub" id="fret-hint">String &amp; fret position</div>
+      </div>
+
+      <div class="feedback hidden" id="fret-feedback">—</div>
+      <div class="answer-grid" id="fret-answers"></div>
+    </div>
+
+    <!-- ──────── MODES ──────── -->
+    <div class="panel" id="panel-modes">
+      <div class="card" style="margin-bottom:.75rem">
+        <div class="card-title">Study or Quiz</div>
+        <div style="display:flex;gap:.6rem">
+          <button class="action-btn" style="margin:0;flex:1" onclick="setModeView('study')" id="mode-study-btn">&#128218; Flashcards</button>
+          <button class="action-btn secondary" style="margin:0;flex:1" onclick="setModeView('quiz')" id="mode-quiz-btn">&#129504; Quiz Me</button>
+        </div>
+      </div>
+
+      <!-- STUDY MODE -->
+      <div id="modes-study">
+        <div class="flashcard-wrap" onclick="flipModeCard()">
+          <div class="flashcard" id="flashcard">
+            <div class="card-face card-front" id="card-front">
+              <div class="mode-number" id="card-num">1 of 7</div>
+              <div class="mode-name-big" id="card-mode-name">Ionian</div>
+              <div class="mode-feel-tag" id="card-feel-tag">Bright &amp; resolved</div>
+              <div class="tap-hint">tap to flip</div>
+            </div>
+            <div class="card-face card-back" id="card-back">
+              <div class="mode-formula" id="card-formula">W W H W W W H</div>
+              <div class="mode-degrees" id="card-degrees">1 2 3 4 5 6 7</div>
+              <div class="mode-chord-label">Characteristic chord</div>
+              <div class="mode-chord-val" id="card-chord">maj7</div>
+              <div class="mode-haken-tag" id="card-haken">Tonal home base</div>
+              <div class="tap-hint">tap to flip</div>
+            </div>
+          </div>
+        </div>
+        <div class="mode-dots" id="mode-dots"></div>
+        <div class="mode-nav">
+          <button class="mode-nav-btn" onclick="prevMode()">&#8592; Prev</button>
+          <button class="mode-nav-btn" onclick="nextMode()">Next &#8594;</button>
+        </div>
+        <div class="card">
+          <div class="card-title">Memory hook</div>
+          <div style="font-size:.88rem;color:var(--text2)" id="card-hook">—</div>
+        </div>
+      </div>
+
+      <!-- QUIZ MODE -->
+      <div id="modes-quiz" style="display:none">
+        <div class="big-display">
+          <div class="big-label" id="mq-prompt-label">Name the mode</div>
+          <div class="big-value" id="mq-prompt" style="font-size:1.1rem">—</div>
+        </div>
+        <div class="score-strip" style="margin-bottom:.75rem">
+          <div class="score-box"><div class="val" id="mq-correct">0</div><div class="lbl">Correct</div></div>
+          <div class="score-box"><div class="val" id="mq-total">0</div><div class="lbl">Answered</div></div>
+        </div>
+        <div class="feedback hidden" id="mq-feedback">—</div>
+        <div class="answer-grid" id="mq-answers"></div>
+      </div>
+    </div>
+
+    <!-- ──────── THEORY QUIZ ──────── -->
+    <div class="panel" id="panel-theory">
+      <div id="theory-quiz-view">
+        <div class="progress-bar-wrap"><div class="progress-bar-fill" id="theory-progress" style="width:0%"></div></div>
+        <div class="q-counter" id="theory-counter">Question 1 / 10</div>
+        <div class="q-text" id="theory-q">Loading…</div>
+        <div class="feedback hidden" id="theory-feedback">—</div>
+        <div class="answer-grid" id="theory-answers"></div>
+      </div>
+      <div id="theory-result-view" style="display:none" class="result-screen">
+        <div class="result-emoji" id="result-emoji">🎸</div>
+        <div class="result-score" id="result-score">7 / 10</div>
+        <div class="result-msg" id="result-msg">Nice work!</div>
+        <button class="action-btn" onclick="startTheoryQuiz()" style="max-width:280px;margin:0 auto">Play Again</button>
+        <div style="margin-top:1rem;font-size:.8rem;color:var(--text3)">Score saved to your streak</div>
+      </div>
+    </div>
+
+  </div><!-- /panels -->
+
+  <nav class="bottom-nav">
+    <button class="nav-btn active" data-tab="ear" onclick="switchTab('ear')">
+      <span class="nav-icon">&#128265;</span>Ear
+    </button>
+    <button class="nav-btn" data-tab="fret" onclick="switchTab('fret')">
+      <span class="nav-icon">&#127928;</span>Fretboard
+    </button>
+    <button class="nav-btn" data-tab="modes" onclick="switchTab('modes')">
+      <span class="nav-icon">&#127925;</span>Modes
+    </button>
+    <button class="nav-btn" data-tab="theory" onclick="switchTab('theory')">
+      <span class="nav-icon">&#128221;</span>Theory
+    </button>
+  </nav>
+
+</div><!-- /app -->
+
+<script>
+'use strict';
+
+// ── Data ───────────────────────────────────────────────────────
+const CHROMATIC = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
+const NOTE_DISPLAY = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
+
+const INTERVALS = [
+  { name: 'Unison',      semi: 0,  abbr: 'P1',  easy: true  },
+  { name: 'Minor 2nd',   semi: 1,  abbr: 'm2',  easy: false },
+  { name: 'Major 2nd',   semi: 2,  abbr: 'M2',  easy: true  },
+  { name: 'Minor 3rd',   semi: 3,  abbr: 'm3',  easy: false },
+  { name: 'Major 3rd',   semi: 4,  abbr: 'M3',  easy: true  },
+  { name: 'Perfect 4th', semi: 5,  abbr: 'P4',  easy: true  },
+  { name: 'Tritone',     semi: 6,  abbr: 'TT',  easy: false },
+  { name: 'Perfect 5th', semi: 7,  abbr: 'P5',  easy: true  },
+  { name: 'Minor 6th',   semi: 8,  abbr: 'm6',  easy: false },
+  { name: 'Major 6th',   semi: 9,  abbr: 'M6',  easy: false },
+  { name: 'Minor 7th',   semi: 10, abbr: 'm7',  easy: false },
+  { name: 'Major 7th',   semi: 11, abbr: 'M7',  easy: false },
+  { name: 'Octave',      semi: 12, abbr: 'P8',  easy: true  },
+];
+
+const STRINGS = [
+  { name: 'Low E', num: 6, open: 4  },
+  { name: 'A',     num: 5, open: 9  },
+  { name: 'D',     num: 4, open: 2  },
+  { name: 'G',     num: 3, open: 7  },
+  { name: 'B',     num: 2, open: 11 },
+  { name: 'High e',num: 1, open: 4  },
+];
+
+const MODES = [
+  { name:'Ionian',      num:1, formula:'W W H W W W H', degrees:'1  2  3  4  5  6  7',   feel:'Bright, resolved, major', chord:'maj7',      color:'#f59e0b', haken:'Tonal home base',            hook:'"Do Re Mi" — the standard major scale sound' },
+  { name:'Dorian',      num:2, formula:'W H W W W H W', degrees:'1  2  b3  4  5  6  b7', feel:'Minor but hopeful, jazzy', chord:'m7',        color:'#10b981', haken:'Common for minor vamps',      hook:'Think Santana "Oye Como Va" — minor with a lifted 6th' },
+  { name:'Phrygian',    num:3, formula:'H W W W H W W', degrees:'1  b2  b3  4  5  b6  b7', feel:'Dark, Spanish, heavy', chord:'m7',          color:'#ef4444', haken:'Intense/dark passages',       hook:'The b2 (one-semitone step) is the Spanish/metal flavour' },
+  { name:'Lydian',      num:4, formula:'W W W H W W H', degrees:'1  2  3  #4  5  6  7', feel:'Dreamy, ethereal, floating', chord:'maj7#11',   color:'#a855f7', haken:'Haken\'s signature ★★',      hook:'The #4 creates the floating, "film score" shimmer — think John Williams' },
+  { name:'Mixolydian',  num:5, formula:'W W H W W H W', degrees:'1  2  3  4  5  6  b7', feel:'Bluesy, dominant, rock', chord:'dom7',          color:'#f97316', haken:'Rock/blues sections',         hook:'Major scale with a flattened 7th — the blues/rock backbone' },
+  { name:'Aeolian',     num:6, formula:'W H W W H W W', degrees:'1  2  b3  4  5  b6  b7', feel:'Natural minor, melancholic', chord:'m7',       color:'#06b6d4', haken:'Emotional/cinematic arcs',   hook:'The standard "sad" minor scale — Em, Am, Dm all use this' },
+  { name:'Locrian',     num:7, formula:'H W W H W W W', degrees:'1  b2  b3  4  b5  b6  b7', feel:'Unstable, tense, dissonant', chord:'m7b5',  color:'#6366f1', haken:'Tension/transition moments', hook:'Both b2 AND b5 make this inherently unstable — almost unusable as tonic' },
+];
+
+const MODE_QUIZ_TYPES = [
+  { prompt: m => `Formula: ${m.formula}`,            label: 'Name this mode' },
+  { prompt: m => `Degrees: ${m.degrees.trim()}`,     label: 'Name this mode' },
+  { prompt: m => `"${m.feel}"`,                      label: 'Which mode fits this feel?' },
+  { prompt: m => `Chord quality: ${m.chord}`,        label: 'Which mode uses this chord?' },
+];
+
+const THEORY_QS = [
+  // Intervals
+  { q:'How many semitones in a Perfect 5th?', opts:['5','6','7','8'], a:2 },
+  { q:'How many semitones in a Major 3rd?', opts:['3','4','5','6'], a:1 },
+  { q:'How many semitones in a Minor 7th?', opts:['9','10','11','12'], a:1 },
+  { q:'A Tritone spans ___ semitones.', opts:['5','6','7','8'], a:1 },
+  { q:'A Perfect 4th above C is?', opts:['E','F','G','Ab'], a:1 },
+  { q:'How many semitones in an octave?', opts:['10','11','12','13'], a:2 },
+  { q:'A Minor 3rd above E is?', opts:['F','F#','G','G#'], a:2 },
+  { q:'A Major 2nd is ___ semitones.', opts:['1','2','3','4'], a:1 },
+  // Modes
+  { q:'Lydian is the ___ degree of the major scale.', opts:['2nd','3rd','4th','5th'], a:2 },
+  { q:'Which mode has a b2 (flat 2)?', opts:['Dorian','Lydian','Phrygian','Mixolydian'], a:2 },
+  { q:'Which mode is identical to the natural minor scale?', opts:['Phrygian','Dorian','Locrian','Aeolian'], a:3 },
+  { q:'The characteristic note of Lydian (vs Ionian) is?', opts:['b3','#4','b7','#5'], a:1 },
+  { q:'Haken\'s most-used mode for their signature "shimmer" is?', opts:['Dorian','Phrygian','Lydian','Mixolydian'], a:2 },
+  { q:'Locrian has BOTH a b2 and a ___', opts:['b3','b4','b5','b6'], a:2 },
+  { q:'Which mode is "minor but hopeful" with a raised 6th?', opts:['Phrygian','Aeolian','Dorian','Locrian'], a:2 },
+  { q:'The dominant 7th chord (dom7) naturally comes from which mode?', opts:['Ionian','Lydian','Mixolydian','Dorian'], a:2 },
+  // Chords
+  { q:'A major triad contains which intervals?', opts:['1 b3 5','1 3 5','1 3 #5','1 b3 b5'], a:1 },
+  { q:'A dominant 7th chord (dom7) contains?', opts:['1 3 5 7','1 3 5 b7','1 b3 5 b7','1 3 b5 b7'], a:1 },
+  { q:'The chord built on the IVth degree of the major scale is?', opts:['minor','diminished','dominant','major'], a:3 },
+  { q:'A maj7#11 chord is associated with which mode?', opts:['Mixolydian','Ionian','Lydian','Dorian'], a:2 },
+  { q:'The II chord in a major key is?', opts:['major','minor','diminished','augmented'], a:1 },
+  { q:'A minor 7 flat 5 chord (m7b5) is built on which scale degree?', opts:['5th','6th','7th','1st'], a:2 },
+  // Rhythm
+  { q:'In 7/8, the most common note grouping is?', opts:['3+4','2+2+3','1+6','4+3'], a:1 },
+  { q:'5/4 can be felt as which groupings?', opts:['2+3 or 3+2','3+2 only','2+2+1','4+1'], a:0 },
+  { q:'"3 against 2" (two rhythms fitting the same bar differently) is called?', opts:['Polymeter','Polytonality','Polyrhythm','Polyphony'], a:2 },
+  { q:'Two instruments playing in DIFFERENT time signatures simultaneously is?', opts:['Polyrhythm','Polymeter','Hemiola','Syncopation'], a:1 },
+  { q:'Metric modulation means?', opts:['Changing key','The tempo changes while pulse stays','Playing rubato','Adding more beats'], a:1 },
+  // Theory
+  { q:'The relative minor of C major is?', opts:['D minor','E minor','A minor','G minor'], a:2 },
+  { q:'Modal interchange means borrowing chords from the?', opts:['Relative major','Parallel minor','Dominant key','Subdominant'], a:1 },
+  { q:'The bVII chord in C major (borrowed) is?', opts:['Ab major','Bb major','Gb major','Eb major'], a:1 },
+  { q:'Voice leading means moving chord tones by?', opts:['Large leaps','Half steps only','Smooth/stepwise motion','Random movement'], a:2 },
+  { q:'Which interval creates the "Spanish" feel in Phrygian?', opts:['b3','b5','b2','b7'], a:2 },
+  { q:'Quartal harmony means chords built in?', opts:['Thirds','Fourths','Fifths','Seconds'], a:1 },
+];
+
+// ── State ──────────────────────────────────────────────────────
+const S = {
+  activeTab: 'ear',
+  ear: { correct: 0, total: 0, current: null, played: false, answered: false, listenMode: false },
+  fret: { correct: 0, total: 0, current: null, answered: false, activeStrings: [0,1,2,3,4,5] },
+  mode: { index: 0, flipped: false, view: 'study', qCurrent: null, qType: 0, qCorrect: 0, qTotal: 0, answered: false },
+  theory: { qs: [], index: 0, correct: 0, answered: false, done: false },
+  streak: 0,
+  audioCtx: null,
+};
+
+// ── Storage ────────────────────────────────────────────────────
+function loadStorage() {
+  try {
+    const d = JSON.parse(localStorage.getItem('gt-trainer') || '{}');
+    S.ear.correct = d.earCorrect || 0;
+    S.ear.total   = d.earTotal   || 0;
+    S.fret.correct= d.fretCorrect|| 0;
+    S.fret.total  = d.fretTotal  || 0;
+    S.streak      = d.streak     || 0;
+    const today = new Date().toDateString();
+    if (d.lastDate !== today) {
+      const yesterday = new Date(Date.now()-86400000).toDateString();
+      if (d.lastDate !== yesterday) S.streak = 0;
+      saveStorage(today);
+    }
+  } catch(e) {}
+  document.getElementById('streak-count').textContent = S.streak;
+}
+
+function saveStorage(date) {
+  try {
+    localStorage.setItem('gt-trainer', JSON.stringify({
+      earCorrect: S.ear.correct, earTotal: S.ear.total,
+      fretCorrect: S.fret.correct, fretTotal: S.fret.total,
+      streak: S.streak, lastDate: date || new Date().toDateString(),
+    }));
+  } catch(e) {}
+}
+
+function bumpStreak() {
+  S.streak++;
+  document.getElementById('streak-count').textContent = S.streak;
+  saveStorage();
+}
+
+// ── Audio ──────────────────────────────────────────────────────
+function getCtx() {
+  if (!S.audioCtx) S.audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (S.audioCtx.state === 'suspended') S.audioCtx.resume();
+  return S.audioCtx;
+}
+
+function playNote(midi, duration, when) {
+  const ctx = getCtx();
+  const t = ctx.currentTime + (when || 0);
+  const freq = 440 * Math.pow(2, (midi - 69) / 12);
+  [1, 2, 3, 0.5].forEach((harmonic, i) => {
+    const osc = ctx.createOscillator();
+    const g   = ctx.createGain();
+    osc.connect(g); g.connect(ctx.destination);
+    osc.frequency.value = freq * harmonic;
+    osc.type = 'sine';
+    const vols = [0.38, 0.12, 0.06, 0.04];
+    g.gain.setValueAtTime(0, t);
+    g.gain.linearRampToValueAtTime(vols[i], t + 0.018);
+    g.gain.exponentialRampToValueAtTime(vols[i] * 0.35, t + 0.12);
+    g.gain.exponentialRampToValueAtTime(0.001, t + duration);
+    osc.start(t); osc.stop(t + duration + 0.05);
+  });
+}
+
+// ── Navigation ────────────────────────────────────────────────
+function switchTab(tab) {
+  S.activeTab = tab;
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('panel-' + tab).classList.add('active');
+  document.querySelector(`.nav-btn[data-tab="${tab}"]`).classList.add('active');
+}
+
+// ── Ear Training ──────────────────────────────────────────────
+function earLevel() {
+  const total = S.ear.correct;
+  if (total < 12) return 1;
+  if (total < 30) return 2;
+  return 3;
+}
+
+function earPool() {
+  const lvl = earLevel();
+  if (lvl === 1) return INTERVALS.filter(i => i.easy);
+  if (lvl === 2) return INTERVALS.filter(i => i.semi <= 7);
+  return INTERVALS;
+}
+
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function earSetup() {
+  S.ear.current = null;
+  S.ear.played  = false;
+  S.ear.answered= false;
+  document.getElementById('ear-interval-name').textContent = '—';
+  document.getElementById('ear-interval-sub').textContent  = 'Press play to hear an interval';
+  document.getElementById('ear-play-btn').textContent = '▶ Play Interval';
+  document.getElementById('ear-play-btn').disabled = false;
+  setFeedback('ear-feedback', '', '');
+  renderEarAnswers([], false);
+  updateEarScore();
+}
+
+function earPlay() {
+  const pool = earPool();
+  S.ear.current = pool[Math.floor(Math.random() * pool.length)];
+  S.ear.played = true;
+  S.ear.answered = false;
+
+  const root = 48 + Math.floor(Math.random() * 12);
+  playNote(root, 1.0, 0);
+  playNote(root + S.ear.current.semi, 1.0, 1.1);
+
+  document.getElementById('ear-play-btn').textContent = '&#9654; Play Again';
+
+  if (S.ear.listenMode) {
+    document.getElementById('ear-interval-name').textContent = S.ear.current.name;
+    document.getElementById('ear-interval-sub').textContent  = S.ear.current.abbr + ' — ' + S.ear.current.semi + ' semitones';
+    setFeedback('ear-feedback', '', '');
+    renderEarAnswers([], false);
+  } else {
+    document.getElementById('ear-interval-name').textContent = '?';
+    document.getElementById('ear-interval-sub').textContent  = 'Identify the interval';
+    renderEarAnswers(buildEarOptions(S.ear.current), true);
+  }
+}
+
+function buildEarOptions(correct) {
+  const pool = earPool().filter(i => i.name !== correct.name);
+  const wrongs = shuffle(pool).slice(0, 3);
+  return shuffle([correct, ...wrongs]);
+}
+
+function renderEarAnswers(opts, enabled) {
+  const grid = document.getElementById('ear-answers');
+  grid.innerHTML = '';
+  opts.forEach(opt => {
+    const btn = document.createElement('button');
+    btn.className = 'answer-btn';
+    btn.textContent = opt.name;
+    btn.disabled = !enabled;
+    btn.onclick = () => checkEarAnswer(opt, btn, opts);
+    grid.appendChild(btn);
+  });
+}
+
+function checkEarAnswer(opt, btn, allOpts) {
+  if (S.ear.answered) return;
+  S.ear.answered = true;
+  S.ear.total++;
+
+  const correct = opt.name === S.ear.current.name;
+  if (correct) {
+    S.ear.correct++;
+    btn.classList.add('correct');
+    setFeedback('ear-feedback', '✓ ' + S.ear.current.name + ' (' + S.ear.current.semi + ' semitones)', 'correct');
+    btn.classList.add('pop');
+  } else {
+    btn.classList.add('wrong');
+    // show correct
+    document.querySelectorAll('#ear-answers .answer-btn').forEach(b => {
+      if (b.textContent === S.ear.current.name) b.classList.add('correct');
+    });
+    setFeedback('ear-feedback', '✗ It was: ' + S.ear.current.name, 'wrong');
+  }
+
+  document.querySelectorAll('#ear-answers .answer-btn').forEach(b => b.disabled = true);
+  document.getElementById('ear-play-btn').textContent = '▶ Next Interval';
+  document.getElementById('ear-play-btn').onclick = () => { earSetup(); document.getElementById('ear-play-btn').onclick = earPlay; };
+  updateEarScore();
+  saveStorage();
+}
+
+function updateEarScore() {
+  const lvl = earLevel();
+  const levelNames = ['', '1 — Starter', '2 — Expanding', '3 — Full Range'];
+  document.getElementById('ear-correct').textContent = S.ear.correct;
+  document.getElementById('ear-pct').textContent = S.ear.total ? Math.round(S.ear.correct / S.ear.total * 100) + '%' : '—';
+  document.getElementById('ear-level').textContent = lvl;
+  document.getElementById('ear-level-badge').textContent = 'Level ' + levelNames[lvl];
+}
+
+document.getElementById('listen-mode-toggle').addEventListener('change', function() {
+  S.ear.listenMode = this.checked;
+  earSetup();
+  document.getElementById('ear-play-btn').onclick = earPlay;
+});
+
+// ── Fretboard Quiz ────────────────────────────────────────────
+function initStringFilter() {
+  const cont = document.getElementById('string-filter');
+  STRINGS.forEach((str, i) => {
+    const dot = document.createElement('div');
+    dot.className = 'str-dot active';
+    dot.textContent = str.name === 'Low E' ? 'E₆' : str.name === 'High e' ? 'e₁' : str.name;
+    dot.onclick = () => {
+      const idx = S.fret.activeStrings.indexOf(i);
+      if (idx === -1) {
+        S.fret.activeStrings.push(i);
+        dot.classList.add('active');
+      } else if (S.fret.activeStrings.length > 1) {
+        S.fret.activeStrings.splice(idx, 1);
+        dot.classList.remove('active');
+      }
+      fretSetup();
+    };
+    cont.appendChild(dot);
+  });
+}
+
+function fretNote(stringIdx, fret) {
+  return CHROMATIC[(STRINGS[stringIdx].open + fret) % 12];
+}
+
+function fretSetup() {
+  S.fret.answered = false;
+  setFeedback('fret-feedback', '', '');
+
+  const strIdx = S.fret.activeStrings[Math.floor(Math.random() * S.fret.activeStrings.length)];
+  const fret   = Math.floor(Math.random() * 13);
+  const note   = fretNote(strIdx, fret);
+  const str    = STRINGS[strIdx];
+
+  S.fret.current = { strIdx, fret, note, str };
+  document.getElementById('fret-position').textContent = 'Fret ' + fret;
+  document.getElementById('fret-hint').textContent     = str.name + ' string (' + str.num + ')';
+
+  // Play the note
+  const midi = 40 + [0,19,14,9,4,0,0][strIdx] + fret;
+  playNote(midi || 48 + fret, 0.8, 0);
+
+  // Build 4 options
+  const wrongs = shuffle(CHROMATIC.filter(n => n !== note)).slice(0, 3);
+  const opts   = shuffle([note, ...wrongs]);
+  renderFretAnswers(opts);
+  updateFretScore();
+}
+
+function renderFretAnswers(opts) {
+  const grid = document.getElementById('fret-answers');
+  grid.innerHTML = '';
+  opts.forEach(note => {
+    const btn = document.createElement('button');
+    btn.className = 'answer-btn';
+    btn.textContent = note;
+    btn.onclick = () => checkFretAnswer(note, btn);
+    grid.appendChild(btn);
+  });
+}
+
+function checkFretAnswer(note, btn) {
+  if (S.fret.answered) return;
+  S.fret.answered = true;
+  S.fret.total++;
+  const correct = note === S.fret.current.note;
+  if (correct) {
+    S.fret.correct++;
+    btn.classList.add('correct');
+    btn.classList.add('pop');
+    setFeedback('fret-feedback', '✓ ' + note + ' — correct!', 'correct');
+  } else {
+    btn.classList.add('wrong');
+    document.querySelectorAll('#fret-answers .answer-btn').forEach(b => {
+      if (b.textContent === S.fret.current.note) b.classList.add('correct');
+    });
+    setFeedback('fret-feedback', '✗ It was: ' + S.fret.current.note, 'wrong');
+  }
+  document.querySelectorAll('#fret-answers .answer-btn').forEach(b => b.disabled = true);
+  updateFretScore();
+  saveStorage();
+  setTimeout(fretSetup, 1200);
+}
+
+function updateFretScore() {
+  document.getElementById('fret-correct').textContent = S.fret.correct;
+  document.getElementById('fret-pct').textContent = S.fret.total ? Math.round(S.fret.correct / S.fret.total * 100) + '%' : '—';
+  document.getElementById('fret-total').textContent = S.fret.total;
+}
+
+// ── Modes ─────────────────────────────────────────────────────
+function renderModeCard() {
+  const m = MODES[S.mode.index];
+  const card = document.getElementById('flashcard');
+  card.classList.remove('flipped');
+  S.mode.flipped = false;
+
+  document.getElementById('card-num').textContent     = (S.mode.index + 1) + ' of 7';
+  document.getElementById('card-mode-name').textContent = m.name;
+  document.getElementById('card-feel-tag').textContent = m.feel;
+  document.getElementById('card-feel-tag').style.color = m.color;
+  document.getElementById('card-front').style.borderColor = m.color + '66';
+  document.getElementById('card-formula').textContent = m.formula;
+  document.getElementById('card-degrees').textContent = m.degrees;
+  document.getElementById('card-chord').textContent   = m.chord;
+  document.getElementById('card-haken').textContent   = m.haken;
+  document.getElementById('card-hook').textContent    = m.hook;
+
+  document.getElementById('card-mode-name').style.color = m.color;
+
+  // Dots
+  const dots = document.getElementById('mode-dots');
+  dots.innerHTML = '';
+  MODES.forEach((_, i) => {
+    const d = document.createElement('div');
+    d.className = 'mode-dot' + (i === S.mode.index ? ' active' : '');
+    d.onclick = () => { S.mode.index = i; renderModeCard(); };
+    dots.appendChild(d);
+  });
+}
+
+function flipModeCard() {
+  S.mode.flipped = !S.mode.flipped;
+  document.getElementById('flashcard').classList.toggle('flipped', S.mode.flipped);
+}
+
+function prevMode() { S.mode.index = (S.mode.index + 6) % 7; renderModeCard(); }
+function nextMode() { S.mode.index = (S.mode.index + 1) % 7; renderModeCard(); }
+
+function setModeView(view) {
+  S.mode.view = view;
+  document.getElementById('modes-study').style.display = view === 'study' ? 'block' : 'none';
+  document.getElementById('modes-quiz').style.display  = view === 'quiz'  ? 'block' : 'none';
+  document.getElementById('mode-study-btn').className = 'action-btn' + (view === 'study' ? '' : ' secondary');
+  document.getElementById('mode-quiz-btn').className  = 'action-btn' + (view === 'quiz'  ? '' : ' secondary');
+  if (view === 'quiz') newModeQuestion();
+}
+
+function newModeQuestion() {
+  S.mode.answered = false;
+  setFeedback('mq-feedback', '', '');
+  const typeIdx = Math.floor(Math.random() * MODE_QUIZ_TYPES.length);
+  const qtype   = MODE_QUIZ_TYPES[typeIdx];
+  const correct = MODES[Math.floor(Math.random() * 7)];
+  S.mode.qCurrent = correct;
+  S.mode.qType    = typeIdx;
+  document.getElementById('mq-prompt-label').textContent = qtype.label;
+  document.getElementById('mq-prompt').textContent       = qtype.prompt(correct);
+
+  const wrongs = shuffle(MODES.filter(m => m.name !== correct.name)).slice(0, 3);
+  const opts   = shuffle([correct, ...wrongs]);
+  const grid   = document.getElementById('mq-answers');
+  grid.innerHTML = '';
+  opts.forEach(m => {
+    const btn = document.createElement('button');
+    btn.className = 'answer-btn';
+    btn.textContent = m.name;
+    btn.onclick = () => checkModeAnswer(m, btn);
+    grid.appendChild(btn);
+  });
+  updateModeScore();
+}
+
+function checkModeAnswer(mode, btn) {
+  if (S.mode.answered) return;
+  S.mode.answered = true;
+  S.mode.qTotal++;
+  const correct = mode.name === S.mode.qCurrent.name;
+  if (correct) {
+    S.mode.qCorrect++;
+    btn.classList.add('correct');
+    btn.classList.add('pop');
+    setFeedback('mq-feedback', '✓ ' + mode.name + ' — ' + mode.feel, 'correct');
+  } else {
+    btn.classList.add('wrong');
+    document.querySelectorAll('#mq-answers .answer-btn').forEach(b => {
+      if (b.textContent === S.mode.qCurrent.name) b.classList.add('correct');
+    });
+    setFeedback('mq-feedback', '✗ It was: ' + S.mode.qCurrent.name, 'wrong');
+  }
+  document.querySelectorAll('#mq-answers .answer-btn').forEach(b => b.disabled = true);
+  updateModeScore();
+  setTimeout(newModeQuestion, 1400);
+}
+
+function updateModeScore() {
+  document.getElementById('mq-correct').textContent = S.mode.qCorrect;
+  document.getElementById('mq-total').textContent   = S.mode.qTotal;
+}
+
+// ── Theory Quiz ───────────────────────────────────────────────
+function startTheoryQuiz() {
+  S.theory.qs      = shuffle(THEORY_QS).slice(0, 10);
+  S.theory.index   = 0;
+  S.theory.correct = 0;
+  S.theory.done    = false;
+  document.getElementById('theory-quiz-view').style.display   = 'block';
+  document.getElementById('theory-result-view').style.display = 'none';
+  renderTheoryQ();
+}
+
+function renderTheoryQ() {
+  const q = S.theory.qs[S.theory.index];
+  S.theory.answered = false;
+  setFeedback('theory-feedback', '', '');
+
+  const pct = (S.theory.index / S.theory.qs.length) * 100;
+  document.getElementById('theory-progress').style.width = pct + '%';
+  document.getElementById('theory-counter').textContent  = 'Question ' + (S.theory.index + 1) + ' / ' + S.theory.qs.length;
+  document.getElementById('theory-q').textContent        = q.q;
+
+  const grid = document.getElementById('theory-answers');
+  grid.innerHTML = '';
+  q.opts.forEach((opt, i) => {
+    const btn = document.createElement('button');
+    btn.className    = 'answer-btn';
+    btn.textContent  = opt;
+    btn.onclick      = () => checkTheoryAnswer(i, btn, q);
+    grid.appendChild(btn);
+  });
+}
+
+function checkTheoryAnswer(idx, btn, q) {
+  if (S.theory.answered) return;
+  S.theory.answered = true;
+  const correct = idx === q.a;
+  if (correct) {
+    S.theory.correct++;
+    btn.classList.add('correct');
+    btn.classList.add('pop');
+    setFeedback('theory-feedback', '✓ Correct!', 'correct');
+  } else {
+    btn.classList.add('wrong');
+    document.querySelectorAll('#theory-answers .answer-btn')[q.a].classList.add('correct');
+    setFeedback('theory-feedback', '✗ Correct answer: ' + q.opts[q.a], 'wrong');
+  }
+  document.querySelectorAll('#theory-answers .answer-btn').forEach(b => b.disabled = true);
+  document.getElementById('theory-progress').style.width = ((S.theory.index + 1) / S.theory.qs.length * 100) + '%';
+
+  setTimeout(() => {
+    S.theory.index++;
+    if (S.theory.index >= S.theory.qs.length) showTheoryResult();
+    else renderTheoryQ();
+  }, 1100);
+}
+
+function showTheoryResult() {
+  const score = S.theory.correct;
+  const total = S.theory.qs.length;
+  const pct   = score / total;
+  const msgs  = [
+    [0,    .4,  '😬', 'Keep studying — it all clicks with repetition.'],
+    [.4,   .6,  '🤔', 'Getting there! Review the modes section.'],
+    [.6,   .8,  '🎸', 'Solid! You\'re building real theory knowledge.'],
+    [.8,   .9,  '🔥', 'Really strong! Haken-level thinking incoming.'],
+    [.9,   1.1, '⭐', 'Perfect! You know your theory cold.'],
+  ];
+  const [,,emoji, msg] = msgs.find(([lo,hi]) => pct >= lo && pct < hi) || msgs[4];
+  document.getElementById('result-emoji').textContent = emoji;
+  document.getElementById('result-score').textContent = score + ' / ' + total;
+  document.getElementById('result-msg').textContent   = msg;
+  document.getElementById('theory-quiz-view').style.display   = 'none';
+  document.getElementById('theory-result-view').style.display = 'block';
+  if (score >= 7) bumpStreak();
+}
+
+// ── Shared helpers ────────────────────────────────────────────
+function setFeedback(id, msg, type) {
+  const el = document.getElementById(id);
+  el.textContent = msg;
+  el.className   = 'feedback' + (msg ? ' ' + type : ' hidden');
+}
+
+// ── Init ──────────────────────────────────────────────────────
+loadStorage();
+initStringFilter();
+fretSetup();
+renderModeCard();
+startTheoryQuiz();
+earSetup();
+document.getElementById('ear-play-btn').onclick = earPlay;
+</script>
+</body>
+</html>
