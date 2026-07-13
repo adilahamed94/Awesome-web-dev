@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guitar to Haken — Music Theory Roadmap</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">&#9836;</span>
+        <div>
+          <h1>Guitar to Haken</h1>
+          <p>A complete music theory roadmap</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#start">Start Here</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#theory">Theory</a>
+        <a href="#fretboard">Fretboard</a>
+        <a href="#practice">Practice</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="badge">Progressive Rock / Metal</div>
+      <h2>From First Chord to<br /><span class="gradient-text">Haken-Level Mastery</span></h2>
+      <p>
+        Haken writes music of extraordinary complexity — odd time signatures, modal
+        interchange, polyrhythm, lush extended harmony, and demanding technique.
+        This roadmap takes you from absolute beginner through every layer of theory
+        and technique you need to understand and eventually play their music.
+      </p>
+      <div class="hero-stats">
+        <div class="stat"><span>4</span><label>Phases</label></div>
+        <div class="stat"><span>~3–5</span><label>Years est.</label></div>
+        <div class="stat"><span>12+</span><label>Theory topics</label></div>
+        <div class="stat"><span>∞</span><label>Reward</label></div>
+      </div>
+      <a href="#roadmap" class="cta-btn">Start the Journey</a>
+    </div>
+    <div class="hero-visual">
+      <div class="fretboard-art">
+        <div class="string" style="--d:0s"></div>
+        <div class="string" style="--d:.1s"></div>
+        <div class="string" style="--d:.2s"></div>
+        <div class="string" style="--d:.3s"></div>
+        <div class="string" style="--d:.4s"></div>
+        <div class="string" style="--d:.5s"></div>
+        <div class="frets">
+          <div class="fret"></div><div class="fret"></div>
+          <div class="fret dot"></div><div class="fret"></div>
+          <div class="fret dot"></div><div class="fret"></div>
+          <div class="fret dot"></div><div class="fret"></div>
+          <div class="fret dot"></div><div class="fret"></div>
+          <div class="fret double-dot"></div><div class="fret"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── START HERE ───────────────────────────────────────────────── -->
+  <section id="start">
+    <div class="section-header">
+      <h2>Start Here — Your First Session</h2>
+      <p>Everything you need to pick up the guitar and make real music today. No experience needed.</p>
+    </div>
+
+    <div class="start-grid">
+
+      <!-- LEFT COLUMN -->
+      <div class="start-left">
+
+        <div class="setup-card">
+          <h3>Before You Play</h3>
+          <p class="setup-sub">Check each one before every practice session.</p>
+          <div class="checklist" id="setup-checklist">
+            <label class="check-item"><input type="checkbox"><span>Tune your guitar — use a tuner app (GuitarTuna is free)</span></label>
+            <label class="check-item"><input type="checkbox"><span>Sit up, guitar body resting on your right leg (or left if left-handed)</span></label>
+            <label class="check-item"><input type="checkbox"><span>Left thumb behind the neck — not wrapped over the top</span></label>
+            <label class="check-item"><input type="checkbox"><span>Pick held loosely between thumb and index finger</span></label>
+            <label class="check-item"><input type="checkbox"><span>Use your fingertips to press strings, not the flat of the finger pad</span></label>
+            <label class="check-item"><input type="checkbox"><span>Press strings close to (but not ON) the fret wire — minimises buzzing</span></label>
+          </div>
+        </div>
+
+        <div class="chord-library-card">
+          <h3>Your First Chords</h3>
+          <p class="setup-sub">Learn in this order — each one builds on the last.</p>
+          <div class="chord-nav-btns" id="chord-nav"></div>
+          <div class="chord-display" id="chord-display"></div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="start-right">
+
+        <div class="metronome-card" id="metronome-card">
+          <h3>Metronome</h3>
+          <div class="metro-bpm-display" id="metro-bpm">80</div>
+          <div class="metro-bpm-label">BPM</div>
+          <input type="range" min="40" max="220" value="80" id="metro-slider" class="metro-slider" />
+          <div class="metro-range-labels"><span>40</span><span>220</span></div>
+          <div class="metro-beats-row" id="metro-beats"></div>
+          <div class="metro-controls">
+            <select id="metro-time" class="metro-select">
+              <option value="4">4 / 4</option>
+              <option value="3">3 / 4</option>
+              <option value="6">6 / 8</option>
+              <option value="5">5 / 4</option>
+              <option value="7">7 / 8</option>
+            </select>
+            <button id="metro-btn" class="metro-play-btn">&#9654; Start</button>
+          </div>
+          <div class="metro-tip">Start at 60–70 BPM. Only increase tempo when every note rings clean.</div>
+        </div>
+
+        <div class="exercise-card">
+          <h3>First Exercise: Em ↔ Am</h3>
+          <p class="setup-sub">The most important skill isn't the chord shape — it's switching between them smoothly.</p>
+          <div class="exercise-steps">
+            <div class="ex-step"><div class="ex-num">1</div><div class="ex-text">Form an <strong>Em</strong> chord. Strum all 6 strings 4 times, slowly.</div></div>
+            <div class="ex-step"><div class="ex-num">2</div><div class="ex-text">Lift your fingers. Form an <strong>Am</strong> chord. Strum 4 times.</div></div>
+            <div class="ex-step"><div class="ex-num">3</div><div class="ex-text">Keep switching. Every single string must ring — if one buzzes, stop and reposition.</div></div>
+            <div class="ex-step"><div class="ex-num">4</div><div class="ex-text">Only use the metronome once the shapes feel stable. Start at 60 BPM.</div></div>
+          </div>
+          <div class="strum-pattern">
+            <div class="sp-label">Beginner strum pattern:</div>
+            <div class="sp-arrows">
+              <div class="sp-beat"><span class="sp-d">↓</span><span class="sp-count-n">1</span></div>
+              <div class="sp-beat"><span class="sp-d">↓</span><span class="sp-count-n">2</span></div>
+              <div class="sp-beat"><span class="sp-u">↑</span><span class="sp-count-n">+</span></div>
+              <div class="sp-beat"><span class="sp-d">↓</span><span class="sp-count-n">3</span></div>
+              <div class="sp-beat"><span class="sp-u">↑</span><span class="sp-count-n">+</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="week1-card">
+          <h3>Week 1 Goals</h3>
+          <div class="week-goals">
+            <div class="wg"><span class="wg-day">Day 1–2</span><span class="wg-task">Learn Em and Am shapes. Switch 10 times cleanly.</span></div>
+            <div class="wg"><span class="wg-day">Day 3–4</span><span class="wg-task">Add E major. Practice Em → Am → E loop.</span></div>
+            <div class="wg"><span class="wg-day">Day 5–6</span><span class="wg-task">Add D major. String all 4 chords together.</span></div>
+            <div class="wg"><span class="wg-day">Day 7</span><span class="wg-task">Play "Knockin' on Heaven's Door" (G–D–Am or Em) start to finish.</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ROADMAP ──────────────────────────────────────────────────── -->
+  <section id="roadmap">
+    <div class="section-header">
+      <h2>The Four Phases</h2>
+      <p>Each phase builds directly on the last. Skipping ahead is possible but not recommended — Haken's complexity rewards deep roots.</p>
+    </div>
+
+    <div class="phases">
+
+      <!-- PHASE 1 -->
+      <div class="phase" data-phase="1">
+        <div class="phase-header">
+          <div class="phase-badge">Phase 1</div>
+          <div>
+            <h3>Foundations</h3>
+            <span class="phase-duration">0 – 6 months</span>
+          </div>
+        </div>
+        <div class="phase-body">
+          <div class="module-grid">
+            <div class="module">
+              <h4>Guitar Basics</h4>
+              <ul>
+                <li>How to hold the guitar and pick</li>
+                <li>Finger independence exercises</li>
+                <li>Open chords: Am, Em, Dm, C, G, D, E, A</li>
+                <li>Clean fretting &amp; muting technique</li>
+                <li>Basic strumming patterns (down/up strokes)</li>
+              </ul>
+            </div>
+            <div class="module">
+              <h4>Reading &amp; Rhythm</h4>
+              <ul>
+                <li>Reading TAB &amp; basic notation</li>
+                <li>Whole, half, quarter, eighth notes</li>
+                <li>4/4 time: counting "1 e + a"</li>
+                <li>Metronome discipline — start <em>slow</em></li>
+                <li>Ties, dotted notes, rests</li>
+              </ul>
+            </div>
+            <div class="module">
+              <h4>First Theory</h4>
+              <ul>
+                <li>The musical alphabet: A B C D E F G</li>
+                <li>Sharps (#) and flats (b)</li>
+                <li>Half steps vs whole steps</li>
+                <li>The chromatic scale on one string</li>
+                <li>What is an interval? (unison → octave)</li>
+              </ul>
+            </div>
+            <div class="module">
+              <h4>Essential Technique</h4>
+              <ul>
+                <li>Hammer-ons and pull-offs (basic legato)</li>
+                <li>Power chords (5th chords)</li>
+                <li>Palm muting</li>
+                <li>Simple single-note riffs</li>
+                <li>Tuning by ear &amp; with a tuner</li>
+              </ul>
+            </div>
+          </div>
+          <div class="milestone">
+            <span class="milestone-icon">&#127937;</span>
+            <strong>Phase 1 Milestone:</strong> Play a full song using open chords at steady tempo. Recommended: "Wish You Were Here" (Pink Floyd), "House of the Rising Sun"
+          </div>
+        </div>
+      </div>
+
+      <!-- PHASE 2 -->
+      <div class="phase" data-phase="2">
+        <div class="phase-header">
+          <div class="phase-badge">Phase 2</div>
+          <div>
+            <h3>Intermediate Musicianship</h3>
+            <span class="phase-duration">6 months – 18 months</span>
+          </div>
+        </div>
+        <div class="phase-body">
+          <div class="module-grid">
+            <div class="module">
+              <h4>Scales &amp; the Major Scale</h4>
+              <ul>
+                <li>The major scale formula: W W H W W W H</li>
+                <li>C major all across the fretboard (CAGED)</li>
+                <li>Pentatonic major &amp; minor (5 positions)</li>
+                <li>Scale degrees: 1 2 3 4 5 6 7</li>
+                <li>Connecting positions into one picture</li>
+              </ul>
+            </div>
+            <div class="module">
+              <h4>Barre Chords &amp; CAGED</h4>
+              <ul>
+                <li>F-shape and B-shape barre chords</li>
+                <li>CAGED system: 5 chord shapes up the neck</li>
+                <li>Minor barre chords</li>
+                <li>Movable power chords at speed</li>
+                <li>7th chord shapes (maj7, m7, dom7)</li>
+              </ul>
+            </div>
+            <div class="module">
+              <h4>Harmony &amp; Diatonic Chords</h4>
+              <ul>
+                <li>Building triads from the major scale</li>
+                <li>The harmonised major scale: I ii iii IV V vi vii°</li>
+                <li>Roman numeral analysis</li>
+                <li>The I–IV–V–I (tonic, subdominant, dominant)</li>
+                <li>Relative minor (vi = relative minor of I)</li>
+              </ul>
+            </div>
+            <div class="module">
+              <h4>Rhythm Expansion</h4>
+              <ul>
+                <li>Sixteenth notes and syncopation</li>
+                <li>3/4 and 6/8 time signatures</li>
+                <li>Triplets &amp; the blues shuffle feel</li>
+                <li>Basic fingerpicking patterns (p i m a)</li>
+                <li>Dynamics: soft vs loud phrasing</li>
+              </ul>
+            </div>
+            <div class="module">
+              <h4>Lead Guitar Basics</h4>
+              <ul>
+                <li>Bending: whole-step and half-step</li>
+                <li>Vibrato technique</li>
+                <li>String skipping introduction</li>
+                <li>Playing pentatonic licks in key</li>
+                <li>Phrasing &amp; space ("less is more")</li>
+              </ul>
+            </div>
+            <div class="module">
+              <h4>Ear Training</h4>
+              <ul>
+                <li>Sing the major scale (solfège: do re mi…)</li>
+                <li>Recognise intervals by sound</li>
+                <li>Identify I IV V by ear in a song</li>
+                <li>Transcribe simple melodies by ear</li>
+                <li>Daily 10 min: interval recognition app</li>
+              </ul>
+            </div>
+          </div>
+          <div class="milestone">
+            <span class="milestone-icon">&#127937;</span>
+            <strong>Phase 2 Milestone:</strong> Improvise over a 12-bar blues using pentatonic, and analyse the chord progressions of a favourite song using Roman numerals.
+          </div>
+        </div>
+      </div>
+
+      <!-- PHASE 3 -->
+      <div class="phase" data-phase="3">
+        <div class="phase-header">
+          <div class="phase-badge">Phase 3</div>
+          <div>
+            <h3>Advanced Theory &amp; Technique</h3>
+            <span class="phase-duration">18 months – 3 years</span>
+          </div>
+        </div>
+        <div class="phase-body">
+          <div class="module-grid">
+            <div class="module">
+              <h4>Modal Theory (Essential for Haken)</h4>
+              <ul>
+                <li>The 7 modes of the major scale</li>
+                <li>Ionian (bright, stable) — I</li>
+                <li>Dorian (minor, jazzy) — ii</li>
+                <li>Phrygian (dark, Spanish/metal) — iii</li>
+                <li>Lydian (dreamy, ethereal) — IV ★ Haken uses heavily</li>
+                <li>Mixolydian (dominant, rock) — V</li>
+                <li>Aeolian (natural minor, melancholic) — vi</li>
+                <li>Locrian (unstable, exotic) — vii</li>
+                <li>How to play &amp; hear each mode as its own tonal centre</li>
+              </ul>
+            </div>
+            <div class="module">
+              <h4>Chord Extensions &amp; Colour</h4>
+              <ul>
+                <li>7th chords: maj7, m7, dom7, m7b5, dim7</li>
+                <li>9th chords: add9, maj9, m9</li>
+                <li>sus2 and sus4 chords</li>
+                <li>Chord voicings: drop 2, drop 3</li>
+                <li>Shell voicings (jazz-style 3-note chords)</li>
+                <li>Polychords &amp; slash chords (D/F#, etc.)</li>
+              </ul>
+            </div>
+            <div class="module">
+              <h4>Odd Time Signatures ★ Core Haken skill</h4>
+              <ul>
+                <li>5/4 time: feel as 3+2 or 2+3</li>
+                <li>7/8 time: feel as 2+2+3 or 3+4</li>
+                <li>9/8, 11/8, 13/8 groupings</li>
+                <li>Counting vs. feeling odd meters</li>
+                <li>Playing riffs that cross barlines</li>
+                <li>Odd-time examples: "Tool - Schism" (6.5/8), "Haken - Lapse"</li>
+              </ul>
+            </div>
+            <div class="module">
+              <h4>Advanced Technique</h4>
+              <ul>
+                <li>Legato runs across the entire fretboard</li>
+                <li>Economy picking &amp; alternate picking at speed</li>
+                <li>Tapping (1-hand and 2-hand)</li>
+                <li>Sweep picking arpeggios</li>
+                <li>Hybrid picking (pick + fingers)</li>
+                <li>Wide interval stretches (Haken-style voicings)</li>
+              </ul>
+            </div>
+            <div class="module">
+              <h4>Modal Interchange &amp; Borrowing</h4>
+              <ul>
+                <li>What is modal interchange?</li>
+                <li>Borrowing chords from the parallel minor</li>
+                <li>bVII chord, bVI chord in major context</li>
+                <li>Borrowed iv chord (e.g. Beatles, Radiohead)</li>
+                <li>Writing progressions that blur tonal centre</li>
+              </ul>
+            </div>
+            <div class="module">
+              <h4>Voice Leading &amp; Counterpoint</h4>
+              <ul>
+                <li>Moving chord tones by step, not leap</li>
+                <li>Common tones between chords</li>
+                <li>Two-voice counterpoint basics</li>
+                <li>Bass line composition under a chord progression</li>
+                <li>Why Haken's arrangements sound "orchestral"</li>
+              </ul>
+            </div>
+          </div>
+          <div class="milestone">
+            <span class="milestone-icon">&#127937;</span>
+            <strong>Phase 3 Milestone:</strong> Compose a 16-bar piece using at least two modes and one odd time signature. Transcribe and play the main guitar riff from Haken's "The Mountain".
+          </div>
+        </div>
+      </div>
+
+      <!-- PHASE 4 -->
+      <div class="phase" data-phase="4">
+        <div class="phase-header">
+          <div class="phase-badge">Phase 4</div>
+          <div>
+            <h3>Haken-Level Mastery</h3>
+            <span class="phase-duration">3 – 5+ years</span>
+          </div>
+        </div>
+        <div class="phase-body">
+          <div class="module-grid">
+            <div class="module">
+              <h4>Polyrhythm &amp; Polymeter ★</h4>
+              <ul>
+                <li>Polyrhythm: 3 against 2, 4 against 3, 5 against 4</li>
+                <li>Polymeter: two meters simultaneously (e.g., 3/4 over 4/4)</li>
+                <li>Haken's approach: independent guitar and drum meters</li>
+                <li>Rhythmic displacement of motifs</li>
+                <li>Practice: tap foot in 4 while playing in 3</li>
+              </ul>
+            </div>
+            <div class="module">
+              <h4>Non-Functional Harmony</h4>
+              <ul>
+                <li>Chromatic mediant relationships</li>
+                <li>Planing (parallel chord movement)</li>
+                <li>Quartal &amp; quintal harmony (chords built in 4ths/5ths)</li>
+                <li>Spectral and cluster voicings</li>
+                <li>Avoiding obvious resolutions — ambiguity as a tool</li>
+              </ul>
+            </div>
+            <div class="module">
+              <h4>Haken Song Studies</h4>
+              <ul>
+                <li><strong>Affinity</strong> — layered arpeggios, synth-guitar blend</li>
+                <li><strong>Puzzle Box</strong> — 7/4 riff + sudden metric shift</li>
+                <li><strong>Lapse</strong> — extreme odd-meter, intense legato</li>
+                <li><strong>Visions</strong> — Lydian arpeggio landscapes</li>
+                <li><strong>The Endless Knot</strong> — polymetric climax section</li>
+                <li><strong>The Mountain</strong> — full album study (epic scope)</li>
+              </ul>
+            </div>
+            <div class="module">
+              <h4>Extended Guitar Techniques</h4>
+              <ul>
+                <li>Two-hand tapping chords (e.g., Tosin Abasi style)</li>
+                <li>Tapped arpeggios over a moving bass</li>
+                <li>Whammy bar dive bombs &amp; controlled vibrato</li>
+                <li>Natural and artificial harmonics</li>
+                <li>Volume swell / e-bow textures</li>
+                <li>7-string / extended range if desired</li>
+              </ul>
+            </div>
+            <div class="module">
+              <h4>Composition &amp; Arrangement</h4>
+              <ul>
+                <li>Theme and variation in a progressive context</li>
+                <li>Section architecture: intro / build / climax / outro</li>
+                <li>Writing guitar parts that interact with keys/bass</li>
+                <li>Dynamics as structure (Haken's quiet-to-LOUD arcs)</li>
+                <li>Recording and producing your own progressive piece</li>
+              </ul>
+            </div>
+            <div class="module">
+              <h4>Transcription &amp; Analysis</h4>
+              <ul>
+                <li>Slow down recordings (0.5x speed) to catch details</li>
+                <li>Write out full notation + TAB of a Haken section</li>
+                <li>Analyse harmonic choices bar by bar</li>
+                <li>Study Charlie Griffiths &amp; Richard Henshall interviews</li>
+                <li>Learn from related bands: Periphery, Animals as Leaders, Tesseract</li>
+              </ul>
+            </div>
+          </div>
+          <div class="milestone">
+            <span class="milestone-icon">&#127775;</span>
+            <strong>Phase 4 Milestone:</strong> Perform a full Haken song (any from <em>Affinity</em> or <em>Vector</em>) end-to-end, or compose and record an original progressive piece that applies all four phases of this roadmap.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── THEORY DEEP DIVES ─────────────────────────────────────────── -->
+  <section id="theory">
+    <div class="section-header">
+      <h2>Theory Deep Dives</h2>
+      <p>The concepts Haken leans on most heavily, explained for guitar players.</p>
+    </div>
+
+    <div class="theory-tabs">
+      <div class="tab-nav">
+        <button class="tab-btn active" data-tab="modes">Modes</button>
+        <button class="tab-btn" data-tab="odd-time">Odd Time</button>
+        <button class="tab-btn" data-tab="harmony">Extended Harmony</button>
+        <button class="tab-btn" data-tab="polyrhythm">Polyrhythm</button>
+      </div>
+
+      <!-- MODES TAB -->
+      <div class="tab-content active" id="tab-modes">
+        <h3>The 7 Modes — Hear the Colour</h3>
+        <p>Modes are not just "scales starting on different notes." Each mode is a unique emotional colour. The key is to hear each one as a <em>home</em>, not as a relative of C major.</p>
+        <div class="mode-grid">
+          <div class="mode-card" style="--accent:#f59e0b">
+            <div class="mode-name">Ionian</div>
+            <div class="mode-formula">W W H W W W H</div>
+            <div class="mode-feel">Bright, resolved, "happy major"</div>
+            <div class="mode-example">C D E F G A B C</div>
+            <div class="mode-chords">Chord: Cmaj7 | Use: tonal centre</div>
+          </div>
+          <div class="mode-card" style="--accent:#10b981">
+            <div class="mode-name">Dorian</div>
+            <div class="mode-formula">W H W W W H W</div>
+            <div class="mode-feel">Minor but hopeful — jazz, funk, prog</div>
+            <div class="mode-example">D E F G A B C D</div>
+            <div class="mode-chords">Chord: Dm7 | Use: minor vamp</div>
+          </div>
+          <div class="mode-card" style="--accent:#ef4444">
+            <div class="mode-name">Phrygian</div>
+            <div class="mode-formula">H W W W H W W</div>
+            <div class="mode-feel">Dark, Spanish, metal — the b2 is key</div>
+            <div class="mode-example">E F G A B C D E</div>
+            <div class="mode-chords">Chord: Em7 | Use: Flamenco, metal</div>
+          </div>
+          <div class="mode-card" style="--accent:#8b5cf6">
+            <div class="mode-name">Lydian ★</div>
+            <div class="mode-formula">W W W H W W H</div>
+            <div class="mode-feel">Dreamy, ethereal, floating — #4 is key</div>
+            <div class="mode-example">F G A B C D E F</div>
+            <div class="mode-chords">Chord: Fmaj7#11 | Use: Haken's #1</div>
+          </div>
+          <div class="mode-card" style="--accent:#f97316">
+            <div class="mode-name">Mixolydian</div>
+            <div class="mode-formula">W W H W W H W</div>
+            <div class="mode-feel">Bluesy dominant — rock &amp; blues</div>
+            <div class="mode-example">G A B C D E F G</div>
+            <div class="mode-chords">Chord: G7 | Use: rock, blues</div>
+          </div>
+          <div class="mode-card" style="--accent:#06b6d4">
+            <div class="mode-name">Aeolian</div>
+            <div class="mode-formula">W H W W H W W</div>
+            <div class="mode-feel">Natural minor — sad, melancholic</div>
+            <div class="mode-example">A B C D E F G A</div>
+            <div class="mode-chords">Chord: Am7 | Use: natural minor</div>
+          </div>
+          <div class="mode-card" style="--accent:#6366f1">
+            <div class="mode-name">Locrian</div>
+            <div class="mode-formula">H W W H W W W</div>
+            <div class="mode-feel">Unstable, tense — b2 AND b5</div>
+            <div class="mode-example">B C D E F G A B</div>
+            <div class="mode-chords">Chord: Bm7b5 | Use: passing, tension</div>
+          </div>
+        </div>
+        <div class="theory-tip">
+          <strong>Haken Tip:</strong> Charlie Griffiths and Richard Henshall often anchor riffs in <strong>Lydian</strong> (floating, #4 creates the signature "prog shimmer") and <strong>Phrygian Dominant</strong> (a Flamenco-flavoured mode from the harmonic minor scale). Listen to "Affinity" and "Cockroach King" to hear these in context.
+        </div>
+      </div>
+
+      <!-- ODD TIME TAB -->
+      <div class="tab-content" id="tab-odd-time">
+        <h3>Odd Time Signatures — Counting &amp; Feeling</h3>
+        <p>Haken almost never stays in 4/4 for long. Their music layers, shifts, and morphs through time signatures. The goal is to <em>feel</em> the groove, not just count it.</p>
+
+        <div class="odd-time-grid">
+          <div class="time-card">
+            <div class="time-sig">5/4</div>
+            <div class="time-feel">Uneven 4/4 — one beat "missing"</div>
+            <div class="time-group">Groups: <strong>3+2</strong> or <strong>2+3</strong></div>
+            <div class="time-examples">Listen: Dave Brubeck "Take Five", Tool "Lateralus" chorus</div>
+            <div class="time-practice">Practice: tap foot in 5 while counting "1-2-3, 1-2"</div>
+          </div>
+          <div class="time-card">
+            <div class="time-sig">7/8</div>
+            <div class="time-feel">Fast and lopsided</div>
+            <div class="time-group">Groups: <strong>2+2+3</strong> or <strong>3+2+2</strong></div>
+            <div class="time-examples">Listen: Tool "Schism", Haken "Lapse"</div>
+            <div class="time-practice">Practice: eighth-note pulse, accent the downbeats of each group</div>
+          </div>
+          <div class="time-card">
+            <div class="time-sig">9/8</div>
+            <div class="time-feel">Triple-meter variant — lilting</div>
+            <div class="time-group">Groups: <strong>3+3+3</strong> or <strong>2+3+4</strong></div>
+            <div class="time-examples">Listen: Haken "Visions", Porcupine Tree "Sound of Muzak"</div>
+            <div class="time-practice">Practice: feel in 3 large beats, each subdivided</div>
+          </div>
+          <div class="time-card">
+            <div class="time-sig">11/8</div>
+            <div class="time-feel">Extended — cycles feel long</div>
+            <div class="time-group">Groups: <strong>3+3+3+2</strong> or <strong>4+4+3</strong></div>
+            <div class="time-examples">Listen: Haken "Puzzle Box" transitions</div>
+            <div class="time-practice">Practice: write a riff in 11/8 using palm-muted power chords</div>
+          </div>
+        </div>
+
+        <div class="theory-tip">
+          <strong>Key Insight:</strong> Haken often writes a riff in one meter and then <em>shifts</em> the metric accent mid-song without changing the note count — called <strong>metric modulation</strong>. The quarter note becomes a dotted quarter, the tempo feels like it changed but the underlying pulse didn't. Study "The Endless Knot" for a masterclass in this.
+        </div>
+
+        <h4>Odd-Time Riff Exercise</h4>
+        <div class="tab-notation">
+<pre>7/8 riff (groups of 2+2+3):
+e|--------------------------------------|
+B|--------------------------------------|
+G|--------------------------------------|
+D|--------------------------------------|
+A|--5-5--7-7--5-5-7-|  (repeat)
+E|--3-3--5-5--3-3-5-|
+
+Count: 1-2 | 3-4 | 5-6-7
+       [2]   [2]   [ 3 ]</pre>
+        </div>
+      </div>
+
+      <!-- EXTENDED HARMONY TAB -->
+      <div class="tab-content" id="tab-harmony">
+        <h3>Extended Harmony — Beyond Basic Chords</h3>
+        <p>Basic triads are only the start. Haken's richness comes from <strong>chord extensions</strong>, <strong>modal interchange</strong>, and <strong>non-functional progressions</strong>.</p>
+
+        <div class="harmony-layers">
+          <div class="harmony-layer">
+            <h4>Layer 1: Building Blocks</h4>
+            <div class="chord-stack">
+              <div class="chord-box">
+                <div class="chord-name">Triad</div>
+                <div class="chord-notes">1 — 3 — 5</div>
+                <div class="chord-eg">C–E–G</div>
+              </div>
+              <div class="chord-arrow">+7</div>
+              <div class="chord-box">
+                <div class="chord-name">7th chord</div>
+                <div class="chord-notes">1 — 3 — 5 — 7</div>
+                <div class="chord-eg">C–E–G–B (Cmaj7)</div>
+              </div>
+              <div class="chord-arrow">+9</div>
+              <div class="chord-box">
+                <div class="chord-name">9th chord</div>
+                <div class="chord-notes">1 — 3 — 5 — 7 — 9</div>
+                <div class="chord-eg">C–E–G–B–D (Cmaj9)</div>
+              </div>
+              <div class="chord-arrow">+11</div>
+              <div class="chord-box highlight">
+                <div class="chord-name">Maj7#11</div>
+                <div class="chord-notes">1 — 3 — #4 — 7</div>
+                <div class="chord-eg">C–E–F#–B ★ Lydian</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="harmony-layer">
+            <h4>Layer 2: Modal Interchange (Borrowing)</h4>
+            <p>In the key of C major, you can "borrow" chords from C minor (the parallel minor):</p>
+            <div class="interchange-grid">
+              <div class="interchange-card native">
+                <div class="ic-label">C major (native)</div>
+                <div class="ic-chords">I — ii — iii — IV — V — vi — vii°</div>
+                <div class="ic-chords">C — Dm — Em — F — G — Am — Bdim</div>
+              </div>
+              <div class="interchange-card borrowed">
+                <div class="ic-label">Borrowed from C minor</div>
+                <div class="ic-chords">bVII — bVI — iv</div>
+                <div class="ic-chords">Bb — Ab — Fm ← dramatic colours</div>
+              </div>
+            </div>
+            <p>The <strong>bVII</strong> (e.g., Bb in C) is Haken's bread-and-butter — it creates a sweeping, film-score quality without fully leaving the key.</p>
+          </div>
+
+          <div class="harmony-layer">
+            <h4>Layer 3: Chromatic Mediants</h4>
+            <p>Moving by major or minor thirds using chords that <em>share no common tones</em>. E → G (chromatic mediant) creates instant "epic" quality used throughout progressive music.</p>
+            <div class="mediant-examples">
+              <div class="mediant">E → G</div>
+              <div class="mediant">C → Eb</div>
+              <div class="mediant">A → F</div>
+              <div class="mediant">D → F#</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="theory-tip">
+          <strong>Listen for this:</strong> In Haken's "In Memoriam", the harmony shifts through multiple tonal centres using chromatic mediants and borrowed chords — it sounds "cinematic" precisely because it avoids predictable V–I resolutions.
+        </div>
+      </div>
+
+      <!-- POLYRHYTHM TAB -->
+      <div class="tab-content" id="tab-polyrhythm">
+        <h3>Polyrhythm &amp; Polymeter</h3>
+        <p>These are often confused. Both appear in Haken's music.</p>
+
+        <div class="poly-comparison">
+          <div class="poly-card">
+            <h4>Polyrhythm</h4>
+            <p>Two rhythms that <strong>start and end together</strong> but subdivide differently.</p>
+            <div class="poly-visual" id="poly-3v2">
+              <div class="poly-row">
+                <span class="poly-label">3-beat:</span>
+                <div class="poly-beats" id="beats-3"></div>
+              </div>
+              <div class="poly-row">
+                <span class="poly-label">2-beat:</span>
+                <div class="poly-beats" id="beats-2"></div>
+              </div>
+            </div>
+            <p class="poly-note">Both fit in the same bar. Guitar plays 3 evenly spaced hits; drums play 2. They land together on beat 1.</p>
+            <p><strong>Example:</strong> 3 against 2 — "play 3 in the time of 2." Say: <em>"not difficult, not difficult"</em> (3 syllables vs 2).</p>
+          </div>
+          <div class="poly-card">
+            <h4>Polymeter</h4>
+            <p>Two instruments each in their own time signature, <strong>cycling at different lengths</strong>.</p>
+            <div class="poly-example-text">
+              <div class="poly-row-text">Guitar: | 1 2 3 | 1 2 3 | 1 2 3 | 1 2 3 |  (4 bars of 3/4)</div>
+              <div class="poly-row-text">Drums:  | 1 2 3 4 | 1 2 3 4 | 1 2 3 4 |  (3 bars of 4/4)</div>
+              <div class="poly-row-text poly-align">Both = 12 eighth notes; align every 12 beats</div>
+            </div>
+            <p><strong>Example in Haken:</strong> "The Endless Knot" — the guitar riff cycles in a different meter than the percussion, creating a constantly shifting "phase" effect that resolves dramatically.</p>
+          </div>
+        </div>
+
+        <h4>Building Polyrhythm on Guitar — Step by Step</h4>
+        <ol class="poly-steps">
+          <li><strong>3 against 2:</strong> Set metronome to 60. Play triplets (3 notes per beat) with pick hand. Tap 2 beats with foot. Then reverse.</li>
+          <li><strong>4 against 3:</strong> Set metronome to dotted-quarter. Play 4 notes per cycle with pick. That's one of Haken's most used grooves.</li>
+          <li><strong>5 against 4:</strong> Hard but achievable. Use a DAW to visualise before attempting on guitar.</li>
+          <li><strong>Internalise, don't count:</strong> After a while, you feel the offset — don't rely on counting. Loop it until it's automatic.</li>
+        </ol>
+
+        <div class="theory-tip">
+          <strong>Practice Tool:</strong> Use <em>Odd Meter Drummer</em> or <em>Polyrhythm Sequencer</em> apps to hear what your target polyrhythm sounds like before trying to play it. Haken's drummer Raymond Hearne often explains his approach in interviews — worth watching.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FRETBOARD MAP ─────────────────────────────────────────────── -->
+  <section id="fretboard">
+    <div class="section-header">
+      <h2>Fretboard Mastery</h2>
+      <p>Knowing every note on the fretboard is non-negotiable at Haken level. Here's the map.</p>
+    </div>
+
+    <div class="fretboard-container">
+      <div class="fb-legend">
+        <span class="fb-legend-item natural">Natural</span>
+        <span class="fb-legend-item root">Root (C)</span>
+        <span class="fb-legend-item fifth">5th (G)</span>
+      </div>
+      <div class="fretboard-scroll">
+        <table class="fretboard-table" id="fretboard-table">
+          <!-- JS will render this -->
+        </table>
+      </div>
+      <div class="fb-controls">
+        <label>Highlight root:
+          <select id="root-select">
+            <option value="C">C</option>
+            <option value="C#">C# / Db</option>
+            <option value="D">D</option>
+            <option value="D#">D# / Eb</option>
+            <option value="E">E</option>
+            <option value="F">F</option>
+            <option value="F#">F# / Gb</option>
+            <option value="G">G</option>
+            <option value="G#">G# / Ab</option>
+            <option value="A">A</option>
+            <option value="A#">A# / Bb</option>
+            <option value="B">B</option>
+          </select>
+        </label>
+        <label>Show:
+          <select id="scale-select">
+            <option value="all">All notes</option>
+            <option value="pentatonic">Pentatonic minor</option>
+            <option value="major">Major scale</option>
+            <option value="dorian">Dorian</option>
+            <option value="lydian">Lydian ★</option>
+            <option value="phrygian">Phrygian</option>
+          </select>
+        </label>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PRACTICE PLAN ─────────────────────────────────────────────── -->
+  <section id="practice">
+    <div class="section-header">
+      <h2>Daily Practice Blueprint</h2>
+      <p>Consistent, focused practice beats marathon sessions. Here's a framework at each level.</p>
+    </div>
+
+    <div class="practice-plans">
+      <div class="plan-card">
+        <div class="plan-level">Beginner (Phase 1)</div>
+        <div class="plan-duration">30 – 45 min/day</div>
+        <div class="plan-breakdown">
+          <div class="plan-item"><span class="plan-time">10 min</span><span class="plan-task">Warm-up: chromatic exercises, finger independence</span></div>
+          <div class="plan-item"><span class="plan-time">10 min</span><span class="plan-task">Chord changes: pick 3 chords, cycle clean</span></div>
+          <div class="plan-item"><span class="plan-time">10 min</span><span class="plan-task">New skill: today's lesson (strumming / new chord)</span></div>
+          <div class="plan-item"><span class="plan-time">10 min</span><span class="plan-task">Fun: play something you enjoy, even if simple</span></div>
+        </div>
+      </div>
+
+      <div class="plan-card">
+        <div class="plan-level">Intermediate (Phase 2–3)</div>
+        <div class="plan-duration">60 – 90 min/day</div>
+        <div class="plan-breakdown">
+          <div class="plan-item"><span class="plan-time">10 min</span><span class="plan-task">Technique warm-up: scales at 60% speed</span></div>
+          <div class="plan-item"><span class="plan-time">15 min</span><span class="plan-task">Ear training: interval recognition / transcription</span></div>
+          <div class="plan-item"><span class="plan-time">20 min</span><span class="plan-task">Theory study: modes, odd time, harmony</span></div>
+          <div class="plan-item"><span class="plan-time">20 min</span><span class="plan-task">Repertoire: working piece, slow to fast</span></div>
+          <div class="plan-item"><span class="plan-time">15 min</span><span class="plan-task">Improvisation: apply today's theory concept</span></div>
+        </div>
+      </div>
+
+      <div class="plan-card">
+        <div class="plan-level">Advanced (Phase 4)</div>
+        <div class="plan-duration">90 – 120 min/day</div>
+        <div class="plan-breakdown">
+          <div class="plan-item"><span class="plan-time">15 min</span><span class="plan-task">Technical warm-up: alternate picking, legato, sweeps</span></div>
+          <div class="plan-item"><span class="plan-time">20 min</span><span class="plan-task">Odd-time &amp; polyrhythm drilling</span></div>
+          <div class="plan-item"><span class="plan-time">20 min</span><span class="plan-task">Haken transcription work (slow down, notate, play)</span></div>
+          <div class="plan-item"><span class="plan-time">20 min</span><span class="plan-task">Composition: apply current theory to original music</span></div>
+          <div class="plan-item"><span class="plan-time">15 min</span><span class="plan-task">Ensemble / recording: play with a track or full band</span></div>
+          <div class="plan-item"><span class="plan-time">10 min</span><span class="plan-task">Review &amp; note insights in a practice journal</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="resources-box">
+      <h3>Recommended Resources</h3>
+      <div class="resources-grid">
+        <div class="resource-cat">
+          <h4>Books</h4>
+          <ul>
+            <li><em>Music Theory for Guitarists</em> — Tom Kolb</li>
+            <li><em>The Guitar Grimoire</em> — Adam Kadmon</li>
+            <li><em>Harmony &amp; Theory</em> — Keith Wyatt</li>
+            <li><em>Rhythm Guitar 365</em> — Troy Nelson</li>
+          </ul>
+        </div>
+        <div class="resource-cat">
+          <h4>Online</h4>
+          <ul>
+            <li>musictheory.net — free interactive lessons</li>
+            <li>JustinGuitar.com — best free beginner course</li>
+            <li>ToneGym — ear training platform</li>
+            <li>Ultimate Guitar — TAB library</li>
+          </ul>
+        </div>
+        <div class="resource-cat">
+          <h4>Bands to Study</h4>
+          <ul>
+            <li>Haken — your ultimate goal</li>
+            <li>Animals as Leaders — polyrhythm masters</li>
+            <li>Periphery — djent + extended technique</li>
+            <li>Tesseract — atmosphere + odd time</li>
+            <li>Porcupine Tree / Steven Wilson — prog harmony</li>
+          </ul>
+        </div>
+        <div class="resource-cat">
+          <h4>Gear Advice</h4>
+          <ul>
+            <li>Start on any 6-string acoustic or electric</li>
+            <li>Phase 3+: consider 7-string (low B extends range)</li>
+            <li>Use a DAW (Reaper, GarageBand) for transcription</li>
+            <li>Metronome + slow-down app (Amazing Slow Downer)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Built with purpose — from first open chord to Haken-level mastery.</p>
+    <p class="footer-sub">Music theory is not a cage. It is a map.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
