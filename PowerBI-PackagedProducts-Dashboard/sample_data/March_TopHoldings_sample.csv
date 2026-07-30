@@ -1,0 +1,51 @@
+Fund_ID,Name,Family,Morningstar_Category,Broad_Category,WFA_AUM,Fund_AUM_Industry,WFA_Ownership_Pct,AUM_Rank,Current_Month_Net,YTD_Net,Rec,Is_Master_List_Fund,Month_End_Date
+FSUSA1K16Z,Columbia Threadneedle Diversified Emerging Mkts Fund A,Columbia Threadneedle,US Fund Diversified Emerging Mkts,International Equity,9553238424,84691830000,11.28,1,-92258280.24,-110683351.06,Y,Y,2026-03-31
+FSUSATDQL3,Invesco High Yield Muni Fund A,Invesco,US Fund High Yield Muni,Municipal Bond,12183989976,84669840000,14.39,2,-159212426.14,-524482410.1,Y,Y,2026-03-31
+FSUSAUXLJ3,Hartford Funds Mid-Cap Blend Fund A,Hartford Funds,US Fund Mid-Cap Blend,U.S. Equity,2285083968,84010440000,2.72,3,46691412.94,88366482.11,N,Y,2026-03-31
+FSUSA9YQN6,Columbia Threadneedle Small Growth Fund I,Columbia Threadneedle,US Fund Small Growth,U.S. Equity,5952967680,81996800000,7.26,4,-238060692.09,-685969984.12,Y,Y,2026-03-31
+FSUSAJY4GU,Dodge & Cox Large Value Fund C,Dodge & Cox,US Fund Large Value,U.S. Equity,11770138080,81737070000,14.4,5,-47909262.8,-144443101.28,Y,Y,2026-03-31
+FSUSA9M8LC,Harbor Foreign Large Growth Fund Inst,Harbor,US Fund Foreign Large Growth,International Equity,7761076232,81523910000,9.52,6,134579442.22,392572446.64,Y,Y,2026-03-31
+FSUSAAUV33,Invesco Large Value Fund I,Invesco,US Fund Large Value,U.S. Equity,9201695211,80504770000,11.43,7,-89191794.18,-161781138.98,Y,N,2026-03-31
+FSUSAKQK45,John Hancock Small Blend Fund A,John Hancock,US Fund Small Blend,U.S. Equity,6830366792,80074640000,8.53,8,-128238144.03,-256931578.34,N,Y,2026-03-31
+FSUSAAXX06,Touchstone Investments Real Estate Fund Inst,Touchstone Investments,US Fund Real Estate,Sector Equity,11152400078,80002870000,13.94,9,-129972561.05,-293672369.53,Y,Y,2026-03-31
+FSUSA87Y10,MFS Tactical Allocation Fund C,MFS,US Fund Tactical Allocation,Allocation,8900718522,79898730000,11.14,10,-215087553.89,-649511471.32,Y,N,2026-03-31
+FSUSA7GTFD,Harbor Tactical Allocation Fund A,Harbor,US Fund Tactical Allocation,Allocation,716590620,79621180000,0.9,11,-183522512.21,-181254233.02,Y,Y,2026-03-31
+FSUSAU8FAN,John Hancock Short-Term Bond Fund R6,John Hancock,US Fund Short-Term Bond,Taxable Bond,1678074349,79529590000,2.11,12,9892520.76,26015668.22,Y,N,2026-03-31
+FSUSAA2XSV,Russell Investments Large Blend Fund A,Russell Investments,US Fund Large Blend,U.S. Equity,1429263242,78964820000,1.81,13,83466269.34,132715879.71,N,N,2026-03-31
+FSUSAYKDFD,Fidelity Mid-Cap Growth Fund Inst,Fidelity,US Fund Mid-Cap Growth,U.S. Equity,3337199272,78707530000,4.24,14,-236929908.92,-457998189.06,Y,Y,2026-03-31
+FSUSANSCCR,Columbia Threadneedle Commodities Broad Basket Fund Inst,Columbia Threadneedle,US Fund Commodities Broad Basket,Commodities,2588685660,78445020000,3.3,15,148989051.97,339370852.14,N,Y,2026-03-31
+FSUSAX7J79,Principal Large Growth Fund Inst,Principal,US Fund Large Growth,U.S. Equity,9101470465,78124210000,11.65,16,-18146445.05,-58844851.52,N,N,2026-03-31
+FSUSAZWA5K,JPMorgan Muni National Long Fund I,JPMorgan,US Fund Muni National Long,Municipal Bond,5168570316,77957320000,6.63,17,-159761091.78,-171745549.34,Y,N,2026-03-31
+FSUSAW8M90,Lord Abbett High Yield Muni Fund Retirement,Lord Abbett,US Fund High Yield Muni,Municipal Bond,5155890348,77883540000,6.62,18,-49649850.72,-69034489.73,N,Y,2026-03-31
+FSUSAEEUYH,T. Rowe Price High Yield Muni Fund Investor,T. Rowe Price,US Fund High Yield Muni,Municipal Bond,11166780426,77708980000,14.37,19,-238395390.35,-500364398.53,Y,N,2026-03-31
+FSUSAZ5J1A,Virtus Large Blend Fund C,Virtus,US Fund Large Blend,U.S. Equity,11454253160,77550800000,14.77,20,-8100133.82,-23140143.41,N,Y,2026-03-31
+FSUSAQVDY8,BlackRock High Yield Bond Fund Inst,BlackRock,US Fund High Yield Bond,Taxable Bond,7639630544,77481040000,9.86,21,143438301.83,347848187.97,N,N,2026-03-31
+FSUSAVG2PF,Invesco Muni National Long Fund Inst,Invesco,US Fund Muni National Long,Municipal Bond,11322729033,77393910000,14.63,22,-41539011.13,-40552487.27,N,Y,2026-03-31
+FSUSAGA7JH,John Hancock Commodities Broad Basket Fund Retirement,John Hancock,US Fund Commodities Broad Basket,Commodities,9116529911,77193310000,11.81,23,22447472.53,75367543.41,Y,Y,2026-03-31
+FSUSA37009,BlackRock Global Moderate Allocation Fund A,BlackRock,US Fund Global Moderate Allocation,Allocation,9935116890,75323100000,13.19,24,-133700952.29,-350280353.6,N,N,2026-03-31
+FSUSAGGVW7,PIMCO Real Estate Fund Inst,PIMCO,US Fund Real Estate,Sector Equity,3299343504,74477280000,4.43,25,130642965.79,112174572.0,N,Y,2026-03-31
+FSUSAUVH1V,Allspring Small Growth Fund Inst,Allspring,US Fund Small Growth,U.S. Equity,1337414792,73890320000,1.81,26,-155182396.06,-270705832.36,N,N,2026-03-31
+FSUSA60XEN,Harbor Nontraditional Bond Fund Inst,Harbor,US Fund Nontraditional Bond,Taxable Bond,5145680400,73509720000,7.0,27,-32005096.63,-79124302.41,Y,Y,2026-03-31
+FSUSAV5VQ8,Virtus Real Estate Fund C,Virtus,US Fund Real Estate,Sector Equity,6332267342,73120870000,8.66,28,135669925.03,316434460.79,Y,Y,2026-03-31
+FSUSA4ZF8X,Goldman Sachs Muni National Interm Fund A,Goldman Sachs,US Fund Muni National Interm,Municipal Bond,9686163400,73103120000,13.25,29,-205776362.4,-662637071.06,N,N,2026-03-31
+FSUSAYLR9N,Baird Multisector Bond Fund R6,Baird,US Fund Multisector Bond,Taxable Bond,3367622518,73050380000,4.61,30,-91775813.43,-261936332.52,Y,Y,2026-03-31
+FSUSAX9Q9N,Goldman Sachs Intermediate Core Bond Fund R,Goldman Sachs,US Fund Intermediate Core Bond,Taxable Bond,4231315182,72703010000,5.82,31,-143053037.45,-149588168.87,N,N,2026-03-31
+FSUSAJGGMV,Guggenheim Foreign Large Growth Fund Inst,Guggenheim,US Fund Foreign Large Growth,International Equity,2472392672,71871880000,3.44,32,62091167.36,187572696.26,N,Y,2026-03-31
+FSUSAUV5DU,Touchstone Investments Mid-Cap Blend Fund I,Touchstone Investments,US Fund Mid-Cap Blend,U.S. Equity,3639573620,71645150000,5.08,33,-147226477.99,-212753793.34,Y,Y,2026-03-31
+FSUSA3HY9A,Natixis Diversified Emerging Mkts Fund A,Natixis,US Fund Diversified Emerging Mkts,International Equity,2500175457,71230070000,3.51,34,-13916571.0,-47023689.86,Y,Y,2026-03-31
+FSUSAPBJJ4,Goldman Sachs Diversified Emerging Mkts Fund A,Goldman Sachs,US Fund Diversified Emerging Mkts,International Equity,7298899950,71208780000,10.25,35,-30512268.94,-50581524.92,Y,Y,2026-03-31
+FSUSAWFXGE,JPMorgan Large Value Fund A,JPMorgan,US Fund Large Value,U.S. Equity,1673857376,70926160000,2.36,36,-83206070.1,-177857280.57,Y,Y,2026-03-31
+FSUSAGUS6B,PIMCO Mid-Cap Blend Fund I,PIMCO,US Fund Mid-Cap Blend,U.S. Equity,9422655912,70740660000,13.32,37,-222234612.39,-599536616.34,N,N,2026-03-31
+FSUSA3QGQ6,Harbor Diversified Emerging Mkts Fund Investor,Harbor,US Fund Diversified Emerging Mkts,International Equity,3019085566,70704580000,4.27,38,-166843402.38,-192338886.63,Y,Y,2026-03-31
+FSUSAH0W8G,Columbia Threadneedle Diversified Emerging Mkts Fund I,Columbia Threadneedle,US Fund Diversified Emerging Mkts,International Equity,9192803550,70605250000,13.02,39,6567738.88,16227959.96,N,Y,2026-03-31
+FSUSAMNYLJ,Columbia Threadneedle Muni National Long Fund Inst,Columbia Threadneedle,US Fund Muni National Long,Municipal Bond,5057840731,70345490000,7.19,40,99145606.7,128854673.54,Y,Y,2026-03-31
+FSUSAN2HW8,Russell Investments Commodities Broad Basket Fund Investor,Russell Investments,US Fund Commodities Broad Basket,Commodities,3605692208,68810920000,5.24,41,-220550510.62,-641828170.78,N,Y,2026-03-31
+FSUSAR1H03,BlackRock Real Estate Fund A,BlackRock,US Fund Real Estate,Sector Equity,3535879164,68524790000,5.16,42,-196243919.05,-281732840.45,Y,N,2026-03-31
+FSUSAKWJFY,Allspring Real Estate Fund Inst,Allspring,US Fund Real Estate,Sector Equity,6319224632,66378410000,9.52,43,100246099.42,307340654.56,Y,Y,2026-03-31
+FSUSAFXZLP,Fidelity Short-Term Bond Fund A,Fidelity,US Fund Short-Term Bond,Taxable Bond,1868529857,66025790000,2.83,44,71640070.64,191051580.41,N,N,2026-03-31
+FSUSAK6EMU,Eaton Vance Large Blend Fund Retirement,Eaton Vance,US Fund Large Blend,U.S. Equity,6890455106,65685940000,10.49,45,63616502.92,199279475.42,Y,N,2026-03-31
+FSUSAFWU77,Vanguard Multisector Bond Fund I,Vanguard,US Fund Multisector Bond,Taxable Bond,7729387248,65670240000,11.77,46,3021376.23,4913715.53,Y,N,2026-03-31
+FSUSAPDEFG,Eaton Vance Tactical Allocation Fund C,Eaton Vance,US Fund Tactical Allocation,Allocation,2574530424,65509680000,3.93,47,-238255870.0,-346660172.13,Y,Y,2026-03-31
+FSUSAXYTPL,First Eagle Intermediate Core Bond Fund A,First Eagle,US Fund Intermediate Core Bond,Taxable Bond,4950919302,64887540000,7.63,48,94480886.36,95302725.78,N,N,2026-03-31
+FSUSALT7UJ,MFS Global Moderate Allocation Fund A,MFS,US Fund Global Moderate Allocation,Allocation,758204109,64803770000,1.17,49,-8463028.24,-25621783.67,Y,Y,2026-03-31
+FSUSACJMSV,AllianceBernstein Small Growth Fund C,AllianceBernstein,US Fund Small Growth,U.S. Equity,7980178590,64097820000,12.45,50,128840005.09,342397583.77,N,N,2026-03-31

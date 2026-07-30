@@ -1,0 +1,6 @@
+region,region_manager,territory,target_multiplier
+North,Alice Johnson,Northern States,1.05
+South,Bob Martinez,Southern States,0.95
+East,Carol Wang,Eastern Corridor,1.1
+West,David Kim,Western Region,1.0
+Central,Emma Brown,Central Belt,0.98

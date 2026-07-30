@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mutual Fund Product Dashboard – Q1 2026</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+  <script src="js/chart.umd.min.js"></script>
+</head>
+<body>
+
+<!-- ═══ HEADER ═══════════════════════════════════════════════════════════════ -->
+<header class="header">
+  <div>
+    <div class="header-title">Mutual Fund Product Dashboard</div>
+    <div class="header-sub">Q1 2026 · Internal Use Only · As of March 31, 2026</div>
+  </div>
+  <div class="header-badge">INTERNAL USE ONLY</div>
+</header>
+
+<!-- ═══ NAV ══════════════════════════════════════════════════════════════════ -->
+<nav class="nav">
+  <button class="nav-btn active" data-page="p1">📊 Executive Overview</button>
+  <button class="nav-btn"        data-page="p2">↕ Net MF Flows</button>
+  <button class="nav-btn"        data-page="p3">📈 Gross Sales</button>
+  <button class="nav-btn"        data-page="p4">🏦 AUM &amp; Holdings</button>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     PAGE 1 — EXECUTIVE OVERVIEW
+═══════════════════════════════════════════════════════════════════════════════ -->
+<div id="p1" class="page active">
+  <div class="page-header">
+    <div>
+      <div class="page-title">Mutual Fund Product Dashboard – Q1 2026</div>
+      <div class="page-note">Gross sales do not include FundSource/Pathways rebalances and replacements, or mutual funds sold level 0</div>
+    </div>
+  </div>
+
+  <!-- KPI row -->
+  <div class="kpi-row">
+    <div class="kpi-card red">
+      <div class="kpi-label">YTD Net Flows</div>
+      <div class="kpi-value">−$1.94B</div>
+      <div class="kpi-sub">vs <span class="kpi-badge neg">−$0.69B</span> YTD 2025</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Total MF AUM</div>
+      <div class="kpi-value">$431.9B</div>
+      <div class="kpi-sub">Mar-26 · incl. Level 0</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Advisory AUM</div>
+      <div class="kpi-value">$255.5B</div>
+      <div class="kpi-sub"><span class="kpi-badge pos">59.16%</span> of total</div>
+    </div>
+    <div class="kpi-card red">
+      <div class="kpi-label">Brokerage AUM</div>
+      <div class="kpi-value">$176.4B</div>
+      <div class="kpi-sub"><span class="kpi-badge neg">40.84%</span> of total</div>
+    </div>
+    <div class="kpi-card green">
+      <div class="kpi-label">YTD Gross Sales</div>
+      <div class="kpi-value">$21.2B</div>
+      <div class="kpi-sub">4.91% penetration rate</div>
+    </div>
+    <div class="kpi-card gold">
+      <div class="kpi-label">Rec Fund AUM</div>
+      <div class="kpi-value">$189.5B</div>
+      <div class="kpi-sub"><span class="kpi-badge">45.86%</span> of total</div>
+    </div>
+  </div>
+
+  <!-- 2×2 Chart grid -->
+  <div class="chart-grid-2x2">
+
+    <div class="card">
+      <div class="card-title">Gross MF Sales</div>
+      <div class="card-sub">Sales in Billions · Gross sales do not include FundSource/Pathways rebalances</div>
+      <div class="legend">
+        <div class="legend-item"><div class="legend-dot" style="background:#C41E3A"></div>2026 YTD</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#1565C0"></div>Mar-26</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#E6A817"></div>2025 YTD</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#E07320"></div>Mar-25</div>
+      </div>
+      <div class="chart-wrap"><canvas id="chartGross"></canvas></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Net MF Flows (YTD −$1.94B vs −$0.69B YTD 2025)</div>
+      <div class="card-sub">Flows in Billions · Trailing 12 months · Net sales do not include FundSource/Pathways</div>
+      <div class="chart-wrap"><canvas id="chartNetFlows"></canvas></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">YTD MF Revenue</div>
+      <div class="card-sub">Revenue in Millions · All revenue figures are derived from WFA Finance Dept.</div>
+      <div class="chart-wrap"><canvas id="chartRevenue"></canvas></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">MF AUM – Trailing 12 Months</div>
+      <div class="card-sub">AUM in Billions · AUM includes mutual funds held level 0</div>
+      <div class="chart-wrap"><canvas id="chartAUM"></canvas></div>
+    </div>
+
+  </div><!-- /chart-grid -->
+</div><!-- /p1 -->
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     PAGE 2 — NET MF FLOWS
+═══════════════════════════════════════════════════════════════════════════════ -->
+<div id="p2" class="page">
+  <div class="page-header">
+    <div>
+      <div class="page-title">Overall MF Net – Q1 2026</div>
+      <div class="page-note">All data excludes 529s and SMA share classes. This tab includes exchanges.</div>
+    </div>
+  </div>
+
+  <!-- Morningstar Category -->
+  <div class="table-pair">
+    <div class="table-section">
+      <div class="table-header">
+        <div>
+          <div class="table-title">Morningstar Category Inflows YTD</div>
+          <div class="table-sub">Sorted by largest YTD net inflow</div>
+        </div>
+        <span class="flow-badge inflow">▲ Inflows</span>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th><th>Morningstar Category</th>
+              <th class="right">YTD Net</th><th class="right">AUM</th><th class="right">Flows%</th>
+            </tr>
+          </thead>
+          <tbody id="tblNetMstarIn"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="table-section">
+      <div class="table-header">
+        <div>
+          <div class="table-title">Morningstar Category Outflows YTD</div>
+          <div class="table-sub">Sorted by largest YTD net outflow</div>
+        </div>
+        <span class="flow-badge outflow">▼ Outflows</span>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th><th>Morningstar Category</th>
+              <th class="right">YTD Net</th><th class="right">AUM</th><th class="right">Flows%</th>
+            </tr>
+          </thead>
+          <tbody id="tblNetMstarOut"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fund Family -->
+  <div class="table-pair">
+    <div class="table-section">
+      <div class="table-header">
+        <div>
+          <div class="table-title">Fund Family Inflows YTD</div>
+          <div class="table-sub">Sorted by largest YTD net inflow</div>
+        </div>
+        <span class="flow-badge inflow">▲ Inflows</span>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>#</th><th>Fund Family</th><th class="right">YTD Net</th><th class="right">AUM</th><th class="right">Flows%</th></tr>
+          </thead>
+          <tbody id="tblNetFamIn"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="table-section">
+      <div class="table-header">
+        <div>
+          <div class="table-title">Fund Family Outflows YTD</div>
+          <div class="table-sub">Sorted by largest YTD net outflow</div>
+        </div>
+        <span class="flow-badge outflow">▼ Outflows</span>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>#</th><th>Fund Family</th><th class="right">YTD Net</th><th class="right">AUM</th><th class="right">Flows%</th></tr>
+          </thead>
+          <tbody id="tblNetFamOut"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Individual Funds -->
+  <div class="table-pair">
+    <div class="table-section">
+      <div class="table-header">
+        <div>
+          <div class="table-title">Individual Fund Inflows YTD</div>
+          <div class="table-sub">Largest inflows by AUM</div>
+        </div>
+        <span class="flow-badge inflow">▲ Inflows</span>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>#</th><th>Fund Name</th><th class="right">YTD Net</th><th class="right">AUM</th><th class="right">Flows%</th></tr>
+          </thead>
+          <tbody id="tblNetFundIn"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="table-section">
+      <div class="table-header">
+        <div>
+          <div class="table-title">Individual Fund Outflows YTD</div>
+          <div class="table-sub">Largest outflows by AUM</div>
+        </div>
+        <span class="flow-badge outflow">▼ Outflows</span>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>#</th><th>Fund Name</th><th class="right">YTD Net</th><th class="right">AUM</th><th class="right">Flows%</th></tr>
+          </thead>
+          <tbody id="tblNetFundOut"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /p2 -->
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     PAGE 3 — GROSS SALES
+═══════════════════════════════════════════════════════════════════════════════ -->
+<div id="p3" class="page">
+  <div class="page-header">
+    <div>
+      <div class="page-title">Mutual Fund Product Dashboard – Gross Sales Q1 2026</div>
+      <div class="page-note">All data excludes 529s, SMA share classes. This tab includes exchanges.</div>
+    </div>
+  </div>
+
+  <!-- Broad category chart + table -->
+  <div class="table-pair" style="margin-bottom:18px">
+    <div class="card" style="padding:18px 20px">
+      <div class="card-title">Broad Asset Class Gross Sales 2026</div>
+      <div class="card-sub">Monthly gross sales by broad asset class · in Millions</div>
+      <div class="chart-wrap" style="height:280px"><canvas id="chartBroadGross"></canvas></div>
+    </div>
+
+    <div class="table-section">
+      <div class="table-header">
+        <div class="table-title">Broad Asset Class Gross Sales YTD</div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Asset Class</th><th class="right">Jan</th><th class="right">Feb</th>
+              <th class="right">Mar</th><th class="right">YTD Gross</th>
+              <th class="right">Mar AUM</th><th class="right">YTD S/AUM%</th>
+            </tr>
+          </thead>
+          <tbody id="tblBroadCat"></tbody>
+          <tfoot id="tblBroadCatTotal"></tfoot>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Morningstar Category gross -->
+  <div class="table-section" style="margin-bottom:18px">
+    <div class="table-header">
+      <div>
+        <div class="table-title">Overall MF Gross – Morningstar Category YTD</div>
+        <div class="table-sub">Sorted by YTD gross sales descending</div>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>#</th><th>Morningstar Category</th><th class="right">YTD Gross</th><th class="right">March AUM</th><th class="right">YTD Sales/AUM%</th></tr>
+        </thead>
+        <tbody id="tblGrossMstar"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Fund family gross -->
+  <div class="table-pair">
+    <div class="table-section">
+      <div class="table-header">
+        <div class="table-title">Overall MF Gross – Fund Family YTD</div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>#</th><th>Fund Family</th><th class="right">YTD Gross</th><th class="right">March AUM</th><th class="right">YTD S/AUM%</th></tr>
+          </thead>
+          <tbody id="tblGrossFamily"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="table-section">
+      <div class="table-header">
+        <div>
+          <div class="table-title">Channel Summary</div>
+          <div class="table-sub">Advisory vs Brokerage split</div>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Channel</th><th class="right">Total AUM</th><th class="right">Advisory</th><th class="right">Adv%</th><th class="right">Brokerage</th><th class="right">Brok%</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>PCG</td>  <td class="right">$208.7B</td><td class="right val-pos">$120.4B</td><td class="right">57.67%</td><td class="right val-neg">$88.4B</td><td class="right">42.33%</td></tr>
+            <tr><td>WBS</td>  <td class="right">$102.3B</td><td class="right val-pos">$64.2B</td> <td class="right">62.73%</td><td class="right val-neg">$38.1B</td><td class="right">37.27%</td></tr>
+            <tr><td>FINET</td><td class="right">$100.9B</td><td class="right val-pos">$69.7B</td> <td class="right">69.01%</td><td class="right val-neg">$31.3B</td><td class="right">30.99%</td></tr>
+            <tr><td>WFAS</td> <td class="right">$9.8B</td>  <td class="right val-pos">$2.2B</td>  <td class="right">13.85%</td><td class="right val-neg">$8.5B</td> <td class="right">86.15%</td></tr>
+            <tr style="font-weight:700;background:#f8f9fb">
+              <td>Total</td>  <td class="right">$431.9B</td><td class="right">$255.5B</td><td class="right">59.16%</td><td class="right">$176.4B</td><td class="right">40.84%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="disclaimer">All data excludes 529s and SMA share classes. This tab includes exchanges. Advisory YTD gross includes FS rebalances &amp; replacements (shown in red in source Excel).</div>
+</div><!-- /p3 -->
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     PAGE 4 — AUM & HOLDINGS
+═══════════════════════════════════════════════════════════════════════════════ -->
+<div id="p4" class="page">
+  <div class="page-header">
+    <div>
+      <div class="page-title">MF AUM &amp; Top Holdings – March 2026</div>
+      <div class="page-note">All data excludes 529s and SMA share classes. Includes exchanges.</div>
+    </div>
+  </div>
+
+  <!-- KPI row -->
+  <div class="kpi-row" style="grid-template-columns:repeat(4,1fr)">
+    <div class="kpi-card">
+      <div class="kpi-label">Total MF AUM</div>
+      <div class="kpi-value">$431.9B</div>
+      <div class="kpi-sub">All MF Assets (non-level 0)</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Advisory AUM</div>
+      <div class="kpi-value">$255.5B</div>
+      <div class="kpi-sub">59.16% of total</div>
+    </div>
+    <div class="kpi-card red">
+      <div class="kpi-label">Brokerage AUM</div>
+      <div class="kpi-value">$176.4B</div>
+      <div class="kpi-sub">40.84% of total</div>
+    </div>
+    <div class="kpi-card green">
+      <div class="kpi-label">Rec Fund AUM</div>
+      <div class="kpi-value">$189.5B</div>
+      <div class="kpi-sub">45.86% of total · non-FS: $94.4B</div>
+    </div>
+  </div>
+
+  <!-- Channel cards -->
+  <div id="channelCards" class="channel-grid"></div>
+
+  <!-- Top Holdings table -->
+  <div class="table-section">
+    <div class="table-header">
+      <div>
+        <div class="table-title">Top MF Holdings by WFA AUM – March 2026</div>
+        <div class="table-sub">Sorted by WFA AUM descending · includes all share classes</div>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Fund Name</th>
+            <th>Family</th>
+            <th>Morningstar Category</th>
+            <th class="right">WFA AUM</th>
+            <th class="right">Fund AUM (Industry)</th>
+            <th class="right">WFA Ownership%</th>
+            <th class="right">Mar-26 Net</th>
+            <th class="right">YTD Net</th>
+          </tr>
+        </thead>
+        <tbody id="tblTopHoldings"></tbody>
+      </table>
+    </div>
+  </div>
+
+</div><!-- /p4 -->
+
+<!-- ─── Scripts ─────────────────────────────────────────────────────────────── -->
+<script src="js/data.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/tables.js"></script>
+<script>
+  // ── Navigation ──────────────────────────────────────────────────────────────
+  let charts = {};
+  document.querySelectorAll(".nav-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".nav-btn").forEach(b => b.classList.remove("active"));
+      document.querySelectorAll(".page").forEach(p => p.classList.remove("active"));
+      btn.classList.add("active");
+      document.getElementById(btn.dataset.page).classList.add("active");
+    });
+  });
+
+  // ── Init charts (Page 1) ────────────────────────────────────────────────────
+  charts.gross    = buildGrossSalesChart();
+  charts.netFlows = buildNetFlowsChart();
+  charts.revenue  = buildRevenueChart();
+  charts.aum      = buildAUMChart();
+
+  // ── Init tables ─────────────────────────────────────────────────────────────
+  buildNetMstarTable();
+  buildNetFamilyTable();
+  buildNetFundTable();
+  buildGrossMstarTable();
+  buildGrossFamilyTable();
+  buildBroadCategoryTable();
+  buildTopHoldingsTable();
+  buildChannelCards();
+
+  // ── Build broad gross chart after tables ─────────────────────────────────────
+  charts.broadGross = buildBroadGrossChart();
+</script>
+</body>
+</html>
