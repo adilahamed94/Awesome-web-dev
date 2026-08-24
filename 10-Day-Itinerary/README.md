@@ -1,6 +1,6 @@
 # 💪 10-Day Healthy Routine — Stay Itinerary
 
-A 10-day plan built around a **consistent daily routine**: early-morning park walk, gym, healthy home-cooked meals (chicken, salads, smoothies — taught by the cook), and pickleball on some evenings. Same rhythm every day so it actually becomes a habit, with the details varied so it never gets boring.
+A 10-day plan built around a **consistent daily routine**: early-morning park walk, gym, healthy home-cooked meals (chicken, salads, smoothies — taught by the cook), pickleball on some evenings, and swimming on a couple more. Same rhythm every day so it actually becomes a habit, with the details varied so it never gets boring.
 
 > **Tweak freely.** Shift the times to fit your sleep, swap any dish or workout. The routine is the point — keep the skeleton, change the filling.
 
@@ -18,7 +18,7 @@ A 10-day plan built around a **consistent daily routine**: early-morning park wa
 | **9:15 AM** | Breakfast + smoothie together |
 | **1:00 PM** | Lunch (prepped in the morning — just warm/assemble) |
 | **4:00 PM** | Light snack (fruit / nuts) |
-| **6:30 PM** | 🏓 **Pickleball** (Days 2, 4, 6, 8, 10) OR relaxed evening (other days) |
+| **6:30 PM** | 🏓 **Pickleball** (Days 2, 4, 6, 8, 10) · 🏊 **Swimming** (Days 3, 7) · relaxed (other days) |
 | **7:45 PM** | 🍽️ **Cook's evening visit** — makes **dinner**; she learns the protein/salad |
 | **8:15 PM** | Dinner together |
 | **10:30 PM** | Wind down, lights out |
@@ -100,10 +100,10 @@ Each day follows the **routine above**. Below is what's different: the meals and
 - **Evening:** 🏓 **Pickleball** (6:30 PM)
 - **Dinner:** Chicken + quinoa + steamed greens
 
-### Day 3 — Cozy but On-Routine 🍵
+### Day 3 — Swim Evening 🏊
 - **Breakfast:** Egg bhurji + multigrain toast · **Smoothie:** mango-spinach green
 - **Lunch:** Tandoori-style chicken + chickpea salad
-- **Evening:** Rest / stretch / movie
+- **Evening:** 🏊 **Swimming** (6:30 PM) — easy laps + relax in the pool
 - **Dinner:** Grilled chicken + big mixed salad
 
 ### Day 4 — Active Recovery + Pickleball 🏓
@@ -124,10 +124,10 @@ Each day follows the **routine above**. Below is what's different: the meals and
 - **Evening:** 🏓 **Pickleball** (6:30 PM)
 - **Dinner:** Leftovers from her cooking + one fresh dish
 
-### Day 7 — Reset & Refuel 🥗
+### Day 7 — Swim & Refuel 🏊
 - **Breakfast:** Chilla / besan pancake + fruit · **Smoothie:** beetroot-apple-ginger
 - **Lunch:** Chicken shawarma-style + rocket-orange salad
-- **Evening:** Rest / walk / farmers' market for fresh produce
+- **Evening:** 🏊 **Swimming** (6:30 PM) — longer swim / active recovery
 - **Dinner:** Grilled chicken + big salad bowl
 
 ### Day 8 — Pickleball Night 🏓
